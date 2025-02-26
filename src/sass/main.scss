@@ -1,4 +1,23 @@
 // Import all of Bootstrap's CSS
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+// untills
+@import "./untills/colors";
+
+// main
 @import "./sections/header";
+@import "./sections/games/leap-year-check";
+@import "./sections/games/guess-the-number";
+@import "./sections/games/rock-paper-scissors";
+@import "./sections/games/simple-calculator";
+@import "./sections/games/time-converter";
+@import "./sections/games/dino-game";
+@import "./sections/games/ball-move";
+@import "./sections/games/max-of-three";
+@import "./sections/games/image-slider";
+@import "./sections/games/scientists-data";
+@import "./sections/footer.scss";
+
+// modal
+@import "./sections/modal/sign-up";
+@import "./sections/modal/success"

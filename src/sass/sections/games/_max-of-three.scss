@@ -1,0 +1,49 @@
+.max-of-three {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__title {
+    font-family: Montserrat Alternates;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #000000;
+  }
+
+  &__inputs {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    gap: 38px;
+
+  }
+
+  &__input {
+    width: 135px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px 0px #00000040;
+    padding: 10px 20px 10px 20px;
+    gap: 10px;
+
+    font-family: Montserrat Alternates;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.63px;
+
+    background-color: #D7D7D7;
+  }
+
+  &__result {
+    font-family: Montserrat Alternates;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.63px;
+
+    margin-top: 36px;
+  }
+}

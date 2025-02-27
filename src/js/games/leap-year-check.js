@@ -1,4 +1,5 @@
 const input = document.getElementById("leap-year__input");
+const button = document.getElementById("leap-year__submit");
 const outputDisplay = document.querySelector(".leap-year__result");
 const output = document.getElementById("leap-year__output");
 
@@ -14,9 +15,13 @@ const isLeapYear = (year) => {
  }
 }
 
-input.addEventListener("input", () => {
+button.addEventListener("click", () => {
     const year = input.value;
+
+    if(year <= 0) return;
+
     outputDisplay.style.display = "block";
+    document.querySelector(".leap-year__content").style.justifyContent = "space-between"
 
     if(isLeapYear(year)) {
         output.textContent = "Ви народилися у високосний рік!"

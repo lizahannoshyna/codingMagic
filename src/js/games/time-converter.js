@@ -4,6 +4,7 @@ const outputMinutes = document.getElementById("time-converter__output-minutes");
 const outputSeconds = document.getElementById("time-converter__output-seconds");
 
 const input = document.getElementById("time-converter__input");
+const button = document.getElementById("time-converter__submit");
 
 const convertTime = () => {
     const seconds = input.value || 0;
@@ -18,6 +19,6 @@ const convertTime = () => {
     outputSeconds.textContent = remainingSeconds.toString().padStart(2, '0');
 }
 
-input.addEventListener("input", () => {
+button.addEventListener("click", () => {
     convertTime()
 })

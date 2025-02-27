@@ -1,0 +1,77 @@
+.rock-paper-scissors {
+  align-items: center;
+  text-align: center;
+  padding: 36px 0;
+}
+.rps_title {
+  font-size: 16px;
+  line-height: 80%;
+  font-weight: 400;
+  color: $dark;
+}
+
+.rps-container {
+  max-width: 453px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+.user-choices {
+  display: flex;
+  gap: 38px;
+  justify-content: center;
+}
+.user-choice_btn {
+  background-color: $dark;
+  padding: 10px;
+  border-radius: 20px;
+}
+.user-choice-btn_selected {
+  background-color: $grey;
+  border: none;
+}
+
+.rps-scoreboard {
+  position: relative;
+  left: 50px;
+  font-size: 12px;
+  line-height: 170%;
+  font-weight: 400;
+  color: $dark;
+}
+.rps-scoreboard-item {
+  margin: 0;
+}
+
+.rps-message {
+  margin: 36px 0 0 0;
+  font-size: 12px;
+  line-height: 125%;
+  font-weight: 400;
+  color: $dark;
+}
+
+.computer-choice_btn {
+  margin-top: 36px;
+  padding: 10px 20px;
+  background-color: $dark;
+  border-radius: 20px;
+  color: $light;
+  font-size: 12px;
+  line-height: 125%;
+  font-weight: 400;
+}
+
+.rps-message-computer-choice_hidden {
+  display: none;
+}
+.rps-message-computer-choice {
+  margin-top: 30px;
+  font-size: 12px;
+  line-height: 125%;
+  font-weight: 400;
+  color: $dark;
+}

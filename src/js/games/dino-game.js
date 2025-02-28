@@ -8,7 +8,9 @@ let gameStarted = false;
 let cactusCounted = false;
 
 function hideElements(...elements) {
-    elements.forEach(el => el.style.display = "none");
+    elements.forEach(el => {
+        if (el) el.style.display = "none";
+    });
 }
 
 function jump() {

@@ -39,6 +39,7 @@ let checkAlive = setInterval(function () {
 
             reset.addEventListener("click", function () {
                 window.location.reload();
+
             });
 
     } else if(cactusLeft <= 0) { // Якщо Динозавр перепригнув через кактус, то рахунок збільшується на 1
@@ -55,5 +56,6 @@ let checkAlive = setInterval(function () {
 window.addEventListener("keydown", function (event) {
     if(event.code === "Space"){
         jump();
+        preventDefault();
     }
 });

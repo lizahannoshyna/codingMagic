@@ -26,7 +26,7 @@ function startGame() {
     score.style.marginTop = "0";
     dino.style.display = cactus.style.display = "block";
     dino.style.animationPlayState = cactus.style.animationPlayState = "running";
-    hideElements(text, score, reset);
+    hideElements(score, reset);
     scoreCount = 0;
 }
 
@@ -68,6 +68,6 @@ window.addEventListener("keydown", e => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    hideElements(dino, cactus, text, score);
+    hideElements(dino, cactus, score);
     reset.textContent = "Грати";
 })

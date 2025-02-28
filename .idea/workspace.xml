@@ -8,11 +8,7 @@
       <change afterPath="$PROJECT_DIR$/src/img/cactus.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/img/dino.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/games/dino-game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/dino-game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/games/scientists-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/scientists-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/games/dino-game.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/games/dino-game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/games/scientists-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/games/scientists-data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_dino-game.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_dino-game.scss" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,30 +26,6 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "vlad",
-    "last_opened_file_path": "C:/Users/Vlad/OneDrive/Desktop/GoITeens/third_semester/dz/codingMagic/src/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "C:/Users/Vlad/AppData/Roaming/JetBrains/WebStorm2024.3/node/versions/23.9.0/node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Vlad\OneDrive\Desktop\GoITeens\third_semester\dz\codingMagic\src\img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Vlad\OneDrive\Desktop\GoITeens\third_semester\dz\codingMagic\src\img" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,10 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740594636751</updated>
       <workItem from="1740594638992" duration="1032000" />
-      <workItem from="1740676682281" duration="798000" />
-      <workItem from="1740677497143" duration="3507000" />
-      <workItem from="1740683243679" duration="3580000" />
-      <workItem from="1740688476707" duration="6878000" />
+
     </task>
     <servers />
   </component>

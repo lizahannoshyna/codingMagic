@@ -85,14 +85,38 @@ const scientists = [
     }
 ];
 
-// Отримати масив вчених що народилися в 19 ст
+// Отримати масив вчених, що народилися в 19 столітті
+const getScientistsFrom19Century = () => {};
 
-let newArr = [];
+// Знайти суму років, скільки прожили всі вчені
+const getTotalLifespan = () => {};
 
-scientists.forEach((el) => {
-    if(el.born > 1800 && el.born < 1900) {
-        newArr.push(el)
-    }
-})
+// Відсортувати вчених за алфавітом
+const sortScientistsByAlphabet = () => {};
 
-console.table(newArr)
+// Відсортувати вчених за кількістю прожитих років
+const sortScientistsByLifespan = () => {};
+
+// Видалити з масива вчених, що народилися у 15, 16 або 17 столітті
+const removeScientistsFrom15To17Century = () => {};
+
+// Знайти вченого, який народився найпізніше
+const findLatestBornScientist = () => {};
+
+// Знайти рік народження Albert Einstein
+const getEinsteinBirthYear = () => {};
+
+// Знайти вчених, прізвище яких починається на літеру "С"
+const findScientistsByLastNameC = () => {};
+
+// Видалити з масива всіх вчених, ім'я яких починається на "A"
+const removeScientistsWithFirstNameA = () => {};
+
+// Знайти вченого, який прожив найбільше, і вченого, який прожив найменше
+const findOldestAndYoungestScientist = () => {};
+
+// Знайти вчених, у яких збігаються перші літери імені та прізвища
+const findScientistsWithMatchingInitials = () => {};
+
+// Дізнатися, чи всі вчені працювали в 19 столітті
+const didAllScientistsWorkIn19Century = () => {};

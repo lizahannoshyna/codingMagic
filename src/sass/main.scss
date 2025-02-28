@@ -1,6 +1,10 @@
 // Import all of Bootstrap's CSS
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  margin: 0;
+}
 // untills
 @import "./untills/colors";
 
@@ -20,4 +24,18 @@
 
 // modal
 @import "./sections/modal/sign-up";
-@import "./sections/modal/success"
+@import "./sections/modal/success";
+
+.main__content {
+  width: 1090px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.line {
+  margin: 0 auto;
+  width: 536px;
+  border: 1px solid #000000;
+  opacity: 1;
+  color: #000000;
+}

@@ -9,7 +9,6 @@ let scoreCount = 0;
 score.style.display = "none";
 reset.style.display = "none";
 
-
 function jump() {
     if (!dino.classList.contains("jump")) { // Спочатку перевіряє, чи динозавр в пригає. Якщо ні, то змушує його стрибати ( додає клас jump)
         dino.classList.add("jump");
@@ -18,12 +17,25 @@ function jump() {
         }, 300);
     }
 }
+// Функція для перезавантаження гри
+function resetGame() {
+    dino.style.animationPlayState = "running";
+    cactus.style.animationPlayState = "running";
+    dino.style.display = "block";
+    cactus.style.display = "block";
+    text.style.display = "none";
+    score.style.display = "none";
+    reset.style.display = "none";
+    scoreCount = 0;
+    score.textContent = "Ваш поточний рахунок: " + scoreCount;
+}
+
 // Цей код відповідає за те, щоб динозавр стрибав, коли користувач натискає пробіл. Це відбувається за допомогою функції jump. Після 300 мілісекунд цей клас видаляється, щоб динозавр міг стрибати знову. ( Якщо цього не зробити, динозавр не зможе стрибати знову)
 let checkAlive = setInterval(function () {
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
 
- // Якщо кактус знаходиться від 0 до 70 пікселів зліва! і динозавр знаходиться на висоті 143 пікселів, то гра закінчується (динозавр і кактус зіштовхуються і гра закінчується) - код перевіряється кожні 10 секунд, за бажанням можна зменшити
+    // Якщо кактус знаходиться від 0 до 70 пікселів зліва! і динозавр знаходиться на висоті 143 пікселів, то гра закінчується (динозавр і кактус зіштовхуються і гра закінчується) - код перевіряється кожні 10 секунд, за бажанням можна зменшити
     if (cactusLeft > 0 && cactusLeft < 70 && dinoTop >= 143) {
         dino.style.animationPlayState = "paused";  // Не змінювати
         cactus.style.animationPlayState = "paused"; // Не змінювати
@@ -34,13 +46,11 @@ let checkAlive = setInterval(function () {
             cactus.style.display = "none";
             score.style.display = "none";
             reset.style.display = "block";
-
         }
 
-            reset.addEventListener("click", function () {
-                window.location.reload();
-
-            });
+        reset.addEventListener("click", function () {
+            resetGame();
+        });
 
     } else if(cactusLeft <= 0) { // Якщо Динозавр перепригнув через кактус, то рахунок збільшується на 1
         scoreCount++ ;
@@ -52,10 +62,10 @@ let checkAlive = setInterval(function () {
         score.style.display = "none";
     }
 }, 39);
-// Цей код перевіряє, чи користувач нажав пробіл, і якщо так, то викликає функцію стрибка.
+// Цей код перевіряє, чи користувач нажав пробіл, і якщо так, то викликає функцію стрибка + відключає дію за замовчуванням ( прокрут вниз ).
 window.addEventListener("keydown", function (event) {
     if(event.code === "Space"){
+        event.preventDefault();
         jump();
-        preventDefault();
     }
 });

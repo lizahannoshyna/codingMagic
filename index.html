@@ -10,7 +10,7 @@
     <title>Magic Code</title>
     <script type="module" crossorigin src="/codingMagic/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/codingMagic/assets/vendor-6837a909.js">
-    <link rel="stylesheet" href="/codingMagic/assets/index-56be5326.css">
+    <link rel="stylesheet" href="/codingMagic/assets/index-65180dcd.css">
   </head>
   <body>
     <header>
@@ -146,14 +146,17 @@
     </div>
 </section>
       <hr class="line">
-      <div class="dino-game_section">
-    <div id="dino" class="dino-game_dino"></div>
-    <div id="cactus" class="dino-game_cactus"></div>
-    <div id="score" class="dino-game_score">0</div>
-    <button type="reset" id="reset" class="dino-game_button">Грати</button>
-    <p id="textDino" class="dino-game_text"></p>
+      <section class="dino-game">
+    <h3 class="dino-game__title">Google динозаврик</h3>
 
-</div>
+    <div class="dino-game__container">
+        <div id="dinoGamePlayer" class="dino-game__dino"></div>
+        <div id="dinoGameCactus" class="dino-game__cactus"></div>
+        <p id="dinoGameScore" class="dino-game__score"></p>
+        <button type="reset" id="reset" class="dino-game__button">Грати</button>
+    </div>
+</section>
+
       <hr class="line">
       <section class="ball-move">
     <div class="container">

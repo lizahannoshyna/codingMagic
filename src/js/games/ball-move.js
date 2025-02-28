@@ -8,10 +8,8 @@ let isMove = false;
 let offsetX = 0;
 let offsetY = 0;
 
-// Додаємо початкове позиціонування
-ball.style.position = "absolute";
 
-// Перетягування м'яча
+
 ball.addEventListener("mousedown", (event) => {
     isMove = true;
     ball.classList.add('active');
@@ -23,7 +21,6 @@ ball.addEventListener("mousedown", (event) => {
     document.addEventListener("mousemove", moveBall);
 });
 
-// Функція руху м'яча
 function moveBall(event) {
     if (!isMove) return;
 
@@ -44,7 +41,6 @@ function moveBall(event) {
     ball.style.top = `${newY - fieldRect.top}px`;
 }
 
-// Відпускання м’яча (зупинка руху)
 document.addEventListener("mouseup", () => {
     isMove = false;
     ball.classList.remove('active');

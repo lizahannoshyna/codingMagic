@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="80e4f916-184f-417e-989f-2a789da44768" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/games/dino-game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/dino-game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/games/time-converter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/time-converter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_dino-game.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_dino-game.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,32 +25,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.dino-game.html.executor&quot;: &quot;Debug&quot;,
-    &quot;Node.js.dino-game.js.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;vlad__text&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vlad/AppData/Roaming/JetBrains/WebStorm2024.3/node/versions&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.dino-game.html.executor": "Debug",
+    "Node.js.dino-game.js.executor": "Debug",
+    "RunOnceActivity.git.unshallow": "true",
+    "disable.download.node.interpreter.editor.notification": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "Oleg",
+    "last_opened_file_path": "C:/Users/Vlad/AppData/Roaming/JetBrains/WebStorm2024.3/node/versions",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="dino-game.js" type="NodeJSConfigurationType" temporary="true" path-to-node="$APPLICATION_CONFIG_DIR$/node/versions/22.13.1/node" nameIsGenerated="true" path-to-js-file="dino-game.js" working-dir="$PROJECT_DIR$/src/js/games">
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.dino-game.js" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

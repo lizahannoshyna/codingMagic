@@ -20,5 +20,6 @@ const convertTime = () => {
 }
 
 button.addEventListener("click", () => {
+    if(input.value < 0) return;
     convertTime()
 })

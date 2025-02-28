@@ -2,7 +2,7 @@ const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 const score = document.getElementById("score");
 const reset = document.getElementById("reset");
-const text = document.getElementById("text");
+const text = document.getElementById("textDino");
 
 let scoreCount = 0;
 // Важливі змінні

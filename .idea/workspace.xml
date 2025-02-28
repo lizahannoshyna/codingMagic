@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e4f916-184f-417e-989f-2a789da44768" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/img/cactus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/dino.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/games/leap-year-check.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/leap-year-check.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/games/scientists-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/scientists-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/games/time-converter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/time-converter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/games/leap-year-check.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/games/leap-year-check.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/games/scientists-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/games/scientists-data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/games/time-converter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/games/time-converter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_leap-year-check.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_leap-year-check.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_max-of-three.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_max-of-three.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_scientists-data.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_scientists-data.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_time-converter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_time-converter.scss" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,19 +26,6 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Oleg&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm\\WebStorm 2024.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
-  }
-}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,8 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740594636751</updated>
       <workItem from="1740594638992" duration="1032000" />
-      <workItem from="1740597129879" duration="7893000" />
-      <workItem from="1740674907381" duration="5941000" />
+
     </task>
     <servers />
   </component>

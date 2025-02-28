@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="80e4f916-184f-417e-989f-2a789da44768" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/games/time-converter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/time-converter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/games/dino-game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/dino-game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/games/dino-game.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/games/dino-game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_ball-move.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_ball-move.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_dino-game.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_dino-game.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_guess-the-number.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_guess-the-number.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e4f916-184f-417e-989f-2a789da44768" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/cactus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/dino.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/js/games/dino-game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/dino-game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +24,20 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.dino-game.html.executor": "Debug",
+    "RunOnceActivity.git.unshallow": "true",
+    "disable.download.node.interpreter.editor.notification": "true",
+    "git-widget-placeholder": "vlad__text",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -42,7 +54,9 @@
       <option name="presentableId" value="Default" />
       <updated>1740594636751</updated>
       <workItem from="1740594638992" duration="1032000" />
-
+      <workItem from="1740755914874" duration="190000" />
+      <workItem from="1740756120338" duration="37000" />
+      <workItem from="1740756169974" duration="392000" />
     </task>
     <servers />
   </component>

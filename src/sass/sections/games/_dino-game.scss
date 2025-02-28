@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.dino-game_section {
+  width: 600px;
+  height: 200px;
+  border: 1px solid #000000;
+  margin: auto;
+    position: relative;
+}
+
+#dino {
+  width: 70px;
+  height: 70px;
+  background-image: url(../img/dino.png);
+  background-size: auto 70px;
+  position: relative;
+  top: 143px;
+}
+
+.jump { // анімація прижка
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump { // Анімація переміщує динозавра з top: 143px до top: 70px
+  0% {
+    top: 143px; // відстань від верхньої частини елемента
+  }
+  30% {
+    top: 115px;
+  }
+  50% {
+    top: 70px;
+  }
+  80% {
+    top: 115px;
+  }
+  100% {
+    top: 143px;
+  }
+}
+
+#cactus {
+  width: 20px;
+  height: 40px;
+  position: relative;
+  top: 91px;
+  left: 580px; // ширина рамки (ширина кактуса)
+  background-image: url(../img/cactus.png);
+  background-size: 20px 40px;
+  animation: cactus-block 1.2s infinite linear;
+}
+
+@keyframes cactus-block { // Анімація переміщує кактус з left: 600px до left: -20px
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+.dino-game_score{
+    font-size: 20px;
+    text-align: center;
+  margin-right: 30px;
+  color: rgba(0, 0, 0, 0.2);
+}
+#reset {
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(#464d55, #25292e);
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: expo-brand-demi,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 14px;
+  justify-content: center;
+  height: 32px;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 32px;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 150ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  top: 37%;
+  left: 40%;
+}
+
+  #reset:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+  }
+
+  #reset:active {
+    outline: 0;
+  }
+
+  #reset:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+  }
+
+  #text{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 30px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+

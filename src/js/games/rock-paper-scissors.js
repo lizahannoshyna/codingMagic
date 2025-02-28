@@ -18,11 +18,11 @@ stoneBtn.addEventListener("click", () => {
   scissorsBtn.classList.remove("user-choice-btn_selected");
   paperBtn.classList.remove("user-choice-btn_selected");
 
-  stoneBtn.querySelector("img").src = "img/rsp-icon/dark-rock.svg";
+  stoneBtn.querySelector("img").src = "img/dark-rock.svg";
   scissorsBtn.querySelector("img").src = "img/scissors-icon.svg";
   paperBtn.querySelector("img").src = "img/paper-icon.svg";
 
-  userChoice = "rock"; // ОНОВЛЕННЯ ВИБОРУ ЮЗЕРА
+  userChoice = "камінь";
 });
 scissorsBtn.addEventListener("click", () => {
   scissorsBtn.classList.add("user-choice-btn_selected");
@@ -30,10 +30,10 @@ scissorsBtn.addEventListener("click", () => {
   paperBtn.classList.remove("user-choice-btn_selected");
 
   stoneBtn.querySelector("img").src = "img/stone-icon.svg";
-  scissorsBtn.querySelector("img").src = "img/rsp-icon/dark-scissors.svg";
+  scissorsBtn.querySelector("img").src = "img/dark-scissors.svg";
   paperBtn.querySelector("img").src = "img/paper-icon.svg";
 
-  userChoice = "scissors";
+  userChoice = "ножиці";
 });
 paperBtn.addEventListener("click", () => {
   paperBtn.classList.add("user-choice-btn_selected");
@@ -42,13 +42,13 @@ paperBtn.addEventListener("click", () => {
 
   stoneBtn.querySelector("img").src = "img/stone-icon.svg";
   scissorsBtn.querySelector("img").src = "img/scissors-icon.svg";
-  paperBtn.querySelector("img").src = "img/rsp-icon/dark-paper.svg";
+  paperBtn.querySelector("img").src = "img/dark-paper.svg";
 
-  userChoice = "paper";
+  userChoice = "папір";
 });
 
 function getComputerChoice() {
-  const choicesArr = ["rock", "scissors", "paper"];
+  const choicesArr = ["камінь", "ножиці", "папір"];
   const randomChoice = Math.floor(Math.random() * choicesArr.length);
   return choicesArr[randomChoice];
 }
@@ -59,9 +59,9 @@ function findWinner(userChoice, computerChoice) {
   }
 
   if (
-    (userChoice === "rock" && computerChoice === "scissors") ||
-    (userChoice === "scissors" && computerChoice === "paper") ||
-    (userChoice === "paper" && computerChoice === "rock")
+    (userChoice === "камінь" && computerChoice === "ножиці") ||
+    (userChoice === "ножиці" && computerChoice === "папір") ||
+    (userChoice === "папір" && computerChoice === "камінь")
   ) {
     return "user";
   } else {

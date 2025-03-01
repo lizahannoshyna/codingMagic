@@ -85,38 +85,126 @@ const scientists = [
     }
 ];
 
-// Отримати масив вчених, що народилися в 19 столітті
-const getScientistsFrom19Century = () => {};
 
-// Знайти суму років, скільки прожили всі вчені
-const getTotalLifespan = () => {};
+const buttons = document.querySelectorAll(".scientists-selection__btn");
+let renderScientistsArr = [...scientists];
+
+const renderScientistsCards = () => {
+    const items = document.querySelectorAll('.scientists-selection__item')
+    items.forEach(el => el.innerHTML = '')
+    renderScientistsArr.forEach((el, index) => {
+        const text = document.createElement('p');
+        text.textContent = `${el.name} ${el.surname}`
+        items[index].appendChild(text)
+        
+    })
+}
+
+buttons.forEach(button => {
+    button.addEventListener("click", (event) => {
+        const action = event.target.dataset.action;
+        console.log(action)
+
+        switch(action) {
+            case 'born-in-19-century':
+                getScientistsFrom19Century();
+                break;
+            case 'sort-by-alphabet':
+                sortScientistsByAlphabet();
+                break;
+            case 'sort-by-lifespan':
+                sortScientistsByLifespan();
+                break;
+            case 'find-latest-born':
+                findLatestBornScientist();
+                break;
+            case 'find-einstein-year':
+                getEinsteinBirthYear();
+                break;
+            case 'find-lastname-c':
+                findScientistsByLastNameC();
+                break;
+            case 'delete-name-a':
+                removeScientistsWithFirstNameA();
+                break;
+            case 'find-oldest-youngest':
+                findOldestAndYoungestScientist();
+                break;
+
+            case 'find-match-initials':
+                findScientistsWithMatchingInitials();
+                break;
+
+        }
+        console.table(renderScientistsArr);
+        renderScientistsCards();
+    });
+});
+
+
+// Отримати масив вчених, що народилися в 19 столітті
+const getScientistsFrom19Century = () => {
+    renderScientistsArr = renderScientistsArr.filter(scientist => scientist.born >= 1801 && scientist.born <= 1900)
+};
 
 // Відсортувати вчених за алфавітом
-const sortScientistsByAlphabet = () => {};
+const sortScientistsByAlphabet = () => {
+    renderScientistsArr = renderScientistsArr.slice().sort((a, b) => a.name > b.name ? 1 : -1);
+
+};
 
 // Відсортувати вчених за кількістю прожитих років
-const sortScientistsByLifespan = () => {};
-
-// Видалити з масива вчених, що народилися у 15, 16 або 17 столітті
-const removeScientistsFrom15To17Century = () => {};
+const sortScientistsByLifespan = () => {
+    renderScientistsArr = renderScientistsArr.slice().sort((a, b) => (b.dead - b.born) - (a.dead - a.born));
+};
 
 // Знайти вченого, який народився найпізніше
-const findLatestBornScientist = () => {};
+const findLatestBornScientist = () => {
+    let latestBorn = renderScientistsArr[0];
+    renderScientistsArr.forEach(el =>{
+        if(el.born > latestBorn.born) latestBorn = el
+    })
+    renderScientistsArr = [latestBorn]
+};
 
 // Знайти рік народження Albert Einstein
-const getEinsteinBirthYear = () => {};
+const getEinsteinBirthYear = () => {
+    renderScientistsArr = renderScientistsArr.filter((el) =>
+        el.name === 'Albert' && el.surname === 'Einstein'
+    )
+
+};
 
 // Знайти вчених, прізвище яких починається на літеру "С"
-const findScientistsByLastNameC = () => {};
+const findScientistsByLastNameC = () => {
+    renderScientistsArr = renderScientistsArr.filter(el => el.name.startsWith('S') )
+};
 
 // Видалити з масива всіх вчених, ім'я яких починається на "A"
-const removeScientistsWithFirstNameA = () => {};
+const removeScientistsWithFirstNameA = () => {
+    renderScientistsArr = renderScientistsArr.filter(el => !el.name.startsWith('A'))
+};
 
 // Знайти вченого, який прожив найбільше, і вченого, який прожив найменше
-const findOldestAndYoungestScientist = () => {};
+const findOldestAndYoungestScientist = () => {
+    let youngest = renderScientistsArr[0]
+    let oldest = renderScientistsArr[0]
+    renderScientistsArr.forEach(el => {
+        const lifeSpan = el.dead - el.born
+        let oldestLifeSpan = oldest.dead - oldest.born
+        let youngestLifeSpan = youngest.dead - youngest.born
+        if(oldestLifeSpan < lifeSpan) oldest = el;
+        if(youngestLifeSpan > youngest) youngest = el;
+    })
+    renderScientistsArr = [youngest, oldest]
+};
+
 
 // Знайти вчених, у яких збігаються перші літери імені та прізвища
-const findScientistsWithMatchingInitials = () => {};
-
-// Дізнатися, чи всі вчені працювали в 19 столітті
-const didAllScientistsWorkIn19Century = () => {};
+const findScientistsWithMatchingInitials = () => {
+    renderScientistsArr = renderScientistsArr.filter(el => {
+        let firstName = el.name[0].toLowerCase()
+        let lastName = el.surname[0].toLowerCase()
+        return firstName === lastName
+    })
+};

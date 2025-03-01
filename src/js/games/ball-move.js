@@ -1,52 +1,58 @@
 const field = document.querySelector(".football-field");
 const ball = document.querySelector(".ball");
-const goal = document.querySelector(".goal");
-const scoreSpan = document.querySelector("#ball-move_score");
+const scoreDisplay = document.querySelector("#ball-move_score");
+const goal = document.querySelector("#goal");
 
 let score = 0;
-let isMove = false;
-let offsetX = 0;
-let offsetY = 0;
+let isGoalScored = false;
 
-// Додаємо початкове позиціонування
-ball.style.position = "absolute";
+field.addEventListener("click", (event) => {
+  let fieldCoords = field.getBoundingClientRect();
 
-// Перетягування м'яча
-ball.addEventListener("mousedown", (event) => {
-    isMove = true;
-    ball.classList.add('active');
+  let ballCoords = {
+    top:
+      event.clientY - fieldCoords.top - field.clientTop - ball.clientHeight / 2,
+    left:
+      event.clientX -
+      fieldCoords.left -
+      field.clientLeft -
+      ball.clientWidth / 2,
+  };
 
-    const ballRect = ball.getBoundingClientRect();
-    offsetX = event.clientX - ballRect.left;
-    offsetY = event.clientY - ballRect.top;
+  if (ballCoords.top < 0) ballCoords.top = 0;
+  if (ballCoords.left < 0) ballCoords.left = 0;
+  if (ballCoords.left + ball.clientWidth > field.clientWidth) {
+    ballCoords.left = field.clientWidth - ball.clientWidth;
+  }
+  if (ballCoords.top + ball.clientHeight > field.clientHeight) {
+    ballCoords.top = field.clientHeight - ball.clientHeight;
+  }
 
-    document.addEventListener("mousemove", moveBall);
+  ball.style.left = ballCoords.left + "px";
+  ball.style.top = ballCoords.top + "px";
+
+  checkGoal();
 });
 
-// Функція руху м'яча
-function moveBall(event) {
-    if (!isMove) return;
+function checkGoal() {
+  const goalRect = goal.getBoundingClientRect();
+  const ballRect = ball.getBoundingClientRect();
 
-    let newX = event.clientX - offsetX;
-    let newY = event.clientY - offsetY;
+  if (
+    ballRect.right > goalRect.left &&
+    ballRect.left < goalRect.right &&
+    ballRect.bottom > goalRect.top &&
+    ballRect.top < goalRect.bottom
+  ) {
+    score++;
+    scoreDisplay.textContent = score;
 
-    const fieldRect = field.getBoundingClientRect();
-    const ballRect = ball.getBoundingClientRect();
-
-    // Обмеження м'яча в межах поля
-    if (newX < fieldRect.left) newX = fieldRect.left;
-    if (newX + ballRect.width > fieldRect.right) newX = fieldRect.right - ballRect.width;
-    if (newX + ballRect.width > fieldRect.right) newX = fieldRect.right - ballRect.width;
-    if (newY < fieldRect.top) newY = fieldRect.top;
-    if (newY + ballRect.height > fieldRect.bottom) newY = fieldRect.bottom - ballRect.height;
-
-    ball.style.left = `${newX - fieldRect.left}px`;
-    ball.style.top = `${newY - fieldRect.top}px`;
+    resetBall();
+  }
 }
 
-// Відпускання м’яча (зупинка руху)
-document.addEventListener("mouseup", () => {
-    isMove = false;
-    ball.classList.remove('active');
-    document.removeEventListener("mousemove", moveBall);
-});
+function resetBall() {
+  ball.style.transform = "translate(0%, 0%)";
+  ball.style.left = `${field.clientWidth / 2 - ball.clientWidth / 2}px`;
+  ball.style.top = `${field.clientHeight / 2 - ball.clientHeight / 2}px`;
+}

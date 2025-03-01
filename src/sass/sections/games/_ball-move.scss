@@ -1,25 +1,22 @@
 .ball-move {
-  
   padding: 36px 0;
-
   margin: 0;
 }
-.ball-move_container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+.ball-move_container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 .ball-move_title {
-    font-size: 16px;
-    line-height: 80%;
-    font-weight: 400;
-    color: $dark;
-    padding-bottom: 36px;
-    margin: 0;
+  font-size: 16px;
+  line-height: 80%;
+  font-weight: 400;
+  color: $dark;
+  padding-bottom: 36px;
+  margin: 0;
 }
 
-// поле
 .football-field {
   width: 100%;
   max-width: 720px;
@@ -27,33 +24,45 @@
   background: #5abb58;
   border: 2px solid $dark;
   border-radius: 37px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
-// м'яч
 .ball {
-    width: 50px;
-    height: 50px;
-    cursor: grab;
-    position: absolute;
-    left: 24%;
-    top: 50%;
-    transform: translate(-50%, -50%); 
-    transition: transform 0.5s ease; 
-    user-select: none;
-    &:hover{
-        filter: drop-shadow(3px 3px 5px rgba(17, 69, 25, 0.5));
-    }
+  width: 50px;
+  height: 50px;
+  cursor: grabbing;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  user-select: none;
+  z-index: 100;
+  &:hover {
+    filter: drop-shadow(3px 3px 5px rgba(17, 69, 25, 0.5));
+  }
 }
-.ball.active{
+.ball.active {
   filter: drop-shadow(3px 3px 5px rgba(17, 69, 25, 0.5));
 }
 
-.ball-move_score-message{
-    margin: 36px 0 0 0;
-    font-size: 12px;
-    line-height: 125%;
-    font-weight: 400;
-    color: $dark;
+#goal {
+  width: 25px;
+  height: 220px;
+  position: absolute;
+  bottom: 50%;
+  right: 40px;
+  transform: translateY(50%);
+  background: #fff;
+}
+
+#ball-move_scoreboard {
+  margin: 36px 0 0 0;
+  font-size: 12px;
+  line-height: 125%;
+  font-weight: 400;
+  color: $dark;
 }

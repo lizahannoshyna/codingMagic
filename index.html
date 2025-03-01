@@ -10,41 +10,36 @@
     <title>Magic Code</title>
     <script type="module" crossorigin src="/codingMagic/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/codingMagic/assets/vendor-6837a909.js">
-    <link rel="stylesheet" href="/codingMagic/assets/index-8cd120ab.css">
+    <link rel="stylesheet" href="/codingMagic/assets/index-e5d11510.css">
   </head>
   <body>
-    <header>
-  <div class="container">
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Launch demo modal
-    </button>
+    <header class="header">
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
+  <div class="header__left">
+    <img src="/codingMagic/assets/header-logo-5e59ce03.svg" alt="">
+
+    <nav class="header-left__nav">
+      <div class="header-left__nav-interactive">
+        <p>Інтерактив</p>
+        <img src="/codingMagic/assets/header-arrow-b0162b36.svg" alt="">
       </div>
-    </div>
+      <p>Наша команда</p>
+      <p>Контакти</p>
+    </nav>
+  </div>
+
+  <div class="header-right">
+    <p>Вітаємо, <span>User</span>!</p>
   </div>
 </header>
     
     
-    <section class="main__content">
-      <hr class="line">
-      
+    <div class="main__bg">
+      <img src="/codingMagic/assets/bg-5d691deb.svg" alt="" class="bg__img">
+      <div class="main__content">
+        <h1 class="main-content__title">Популярні інетрактивні ігри</h1>
+        <hr class="line">
+        
 <section class="leap-year">
     <h3 class="leap-year__title">Перевір в який рік ти народився</h3>
     <div class="leap-year__content">
@@ -64,8 +59,8 @@
         </p>
     </div>
 </section>
-      <hr class="line">
-      <section class="guess-the-number">
+        <hr class="line">
+        <section class="guess-the-number">
     <h1 class="title">Вгадай число,яке загадав комп'ютер </h1>
     <div class="input-wrapper">
         <div class="input-content">
@@ -80,8 +75,8 @@
     </div>
  
 </section>
-      <hr class="line">
-      <section class="rock-paper-scissors">
+        <hr class="line">
+        <section class="rock-paper-scissors">
   <div class="container">
     <h3 class="rps_title">Камінь - ножиці - папір</h3>
   <div class="rps-container">
@@ -122,10 +117,10 @@
   </div>
 </section>
 
-      <hr class="line">
-      
-      <hr class="line">
-      <section class="time-converter">
+        <hr class="line">
+        
+        <hr class="line">
+        <section class="time-converter">
     <h3 class="time-converter__title">Калькулятор часу</h3>
     <div class="time-converter__content">
 
@@ -145,8 +140,8 @@
         </p>
     </div>
 </section>
-      <hr class="line">
-      <section class="dino-game">
+        <hr class="line">
+        <section class="dino-game">
     <h3 class="dino-game__title">Google динозаврик</h3>
 
     <div class="dino-game__container">
@@ -157,8 +152,8 @@
     </div>
 </section>
 
-      <hr class="line">
-      <section class="ball-move">
+        <hr class="line">
+        <section class="ball-move">
   <div class="container">
     <div class="ball-move_container">
       <h3 class="ball-move_title">Футбол</h3>
@@ -173,8 +168,8 @@
   </div>
 </section>
 
-      <hr class="line">
-      <section class="max-of-three">
+        <hr class="line">
+        <section class="max-of-three">
     <h3 class="max-of-three__title">Введіть 3 числа</h3>
     <div class="max-of-three__inputs">
         <input type="number" id="max-of-three__input-1" class="max-of-three__input" placeholder="Введіть число">
@@ -186,10 +181,10 @@
     </p>
 </section>
 
-      <hr class="line">
-      
-      <hr class="line">
-      <section class="scientists-selection">
+        <hr class="line">
+        
+        <hr class="line">
+        <section class="scientists-selection">
     <h3 class="scientists-selection__title">Обери вченого/их</h3>
 
     <div class="scientists-selection__grid">
@@ -227,9 +222,27 @@
 
     <button class="scientists-selection__btn-last">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
 </section>
-    </section>
-
+      </div>
+    </div>
     
+
+<footer class="footer">
+
+    <img src="/codingMagic/assets/footer-logo-334c5781.svg" alt="">
+    <ul class="footer__contacts">
+        <li><p>Тел: +38 (123) 456 78 90</p></li>
+        <li><p>E-Mail: codingmagic@gmail.com</p></li>
+        <li><p>Facebook: CodingMagic</p></li>
+        <li><p>Twitter: CodingMagic</p></li>
+        <li><p>Instagram: CodingMagic</p></li>
+    </ul>
+
+    <form class="footer__subscribe">
+        <input type="email" id="footerSubEmail" class="footer-subscribe__input" placeholder="Ваша ел. адреса...">
+        <button class="footer-subscribe__send">Підписатись</button>
+        <p>*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+    </form>
+</footer>
 
     
   </body>

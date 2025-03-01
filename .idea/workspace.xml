@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e4f916-184f-417e-989f-2a789da44768" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/footer-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/header-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/header-logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/games/scientists-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/scientists-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/games/scientists-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/games/scientists-data.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +33,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "disable.download.node.interpreter.editor.notification": "true",
     "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "Oleg",
+    "git-widget-placeholder": "vlad__scientiest",
     "last_opened_file_path": "D:/GitH/codingMagic/src/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -50,7 +41,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "D:\\WebStorm\\WebStorm 2024.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
   <component name="RecentsManager">

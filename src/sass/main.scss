@@ -26,10 +26,37 @@ body {
 @import "./sections/modal/sign-up";
 @import "./sections/modal/success";
 
+.main__bg {
+  position: relative;
+  z-index: 0;
+
+  .bg__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
 .main__content {
   width: 1090px;
+  background-color: #ffffff;
   margin: 0 auto;
-  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.main-content__title {
+  text-align: center;
+  margin: 36px;
+
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29.26px;
 }
 
 .line {

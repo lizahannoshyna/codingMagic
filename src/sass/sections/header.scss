@@ -1,0 +1,43 @@
+.header {
+  padding: 36px 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+
+  &__left {
+    width: 544px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-left__nav {
+    width: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      margin-bottom: 0;
+      font-family: Montserrat Alternates;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14.63px;
+    }
+
+    &-interactive {
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  &-right {
+    p {
+      font-family: Montserrat Alternates;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14.63px;
+    }
+
+  }
+}

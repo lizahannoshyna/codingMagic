@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e4f916-184f-417e-989f-2a789da44768" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/js/games/dino-game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/dino-game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/footer-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/header-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/header-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/games/scientists-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/scientists-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/sections/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/sections/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/header.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +38,12 @@
   "keyToString": {
     "JavaScript Debug.dino-game.html.executor": "Debug",
     "Node.js.dino-game.js.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "disable.download.node.interpreter.editor.notification": "true",
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "Oleg",
-    "last_opened_file_path": "C:/Users/Vlad/AppData/Roaming/JetBrains/WebStorm2024.3/node/versions",
+    "last_opened_file_path": "D:/GitH/codingMagic/src/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -41,6 +53,11 @@
     "ts.external.directory.path": "D:\\WebStorm\\WebStorm 2024.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitH\codingMagic\src\img" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="dino-game.js" type="NodeJSConfigurationType" temporary="true" path-to-node="$APPLICATION_CONFIG_DIR$/node/versions/22.13.1/node" nameIsGenerated="true" path-to-js-file="dino-game.js" working-dir="$PROJECT_DIR$/src/js/games">
       <method v="2" />
@@ -67,6 +84,7 @@
       <workItem from="1740756169974" duration="728000" />
       <workItem from="1740756924701" duration="233000" />
       <workItem from="1740757171200" duration="371000" />
+      <workItem from="1740845788363" duration="5804000" />
     </task>
     <servers />
   </component>

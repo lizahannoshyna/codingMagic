@@ -1,27 +1,39 @@
-const guessInput = document.getElementById('guessInput')
-const guessBtn = document.getElementById('guessBtn')
-const text = document.getElementById('text')
+const input = document.getElementById('guess-the-number__input')
+const guessBtn = document.getElementById('guess-the-number__submit')
+const outputDisplay = document.querySelector('.guess-the-number__result')
+const output = document.getElementById('guess-the-number__output')
 let random = Math.floor(Math.random() * 10) + 1
+
+document.addEventListener("DOMContentLoaded", () => {
+    outputDisplay.style.display = "none"
+});
+
 guessBtn.addEventListener('click', () => {
-    const userGuess = parseInt(guessInput.value);
+    const userGuess = parseInt(input.value);
+    outputDisplay.style.display = "block";
+    document.querySelector(".guess-the-number__content").style.justifyContent = "space-between"
+
+
     if(isNaN(userGuess) || userGuess < 1 || userGuess > 10) {
-           text.textContent = 'Будь ласка введіть число в діапазоні від 1 до 10'
-           text.style.color = 'orange'
-           return
+        output.textContent = 'Будь ласка введіть число в діапазоні від 1 до 10'
+        output.style.color = 'orange'
     }
-if(userGuess === random) {
-   
-    text.textContent = `Вітаю, ви вгадали число! ${random}`
-    text.style.color = '#039900'
-}
-else {
-    text.textContent = `Ви не вгадали число ${random}`
-    text.style.color = 'red'
-}
-setTimeout(resetGame, 2000);
+
+    if(userGuess === random) {
+        output.textContent = `Вітаю, ви вгадали число! ${random}`
+        output.style.color = '#039900'
+    } else {
+        output.textContent = `Ви програли, комп’ютер загадав ${random}`
+        output.style.color = 'red'
+    }
+
+    setTimeout(resetGame, 3000);
 })
+
 function resetGame() {
    random = Math.floor(Math.random() * 10) + 1
-    text.textContent = ''
-    guessInput.value = ''
+    output.textContent = ''
+    input.value = ''
+    outputDisplay.style.display = "none";
+    document.querySelector(".guess-the-number__content").style.justifyContent = "center"
 }

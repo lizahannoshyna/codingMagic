@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="80e4f916-184f-417e-989f-2a789da44768" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/games/scientists-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/scientists-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/games/scientists-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/games/scientists-data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/games/guess-the-number.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/guess-the-number.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/games/guess-the-number.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/games/guess-the-number.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_guess-the-number.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_guess-the-number.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_leap-year-check.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_leap-year-check.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +35,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "disable.download.node.interpreter.editor.notification": "true",
     "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "vlad__scientiest",
+    "git-widget-placeholder": "Oleg",
     "last_opened_file_path": "D:/GitH/codingMagic/src/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

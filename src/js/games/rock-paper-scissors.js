@@ -18,9 +18,9 @@ stoneBtn.addEventListener("click", () => {
   scissorsBtn.classList.remove("user-choice-btn_selected");
   paperBtn.classList.remove("user-choice-btn_selected");
 
-  stoneBtn.querySelector("img").src = "../img/dark-rock.svg";
-  scissorsBtn.querySelector("img").src = "../img/scissors-icon.svg";
-  paperBtn.querySelector("img").src = "../img/paper-icon.svg";
+  stoneBtn.querySelector("img").src = "img/dark-rock.svg";
+  scissorsBtn.querySelector("img").src = "img/scissors-icon.svg";
+  paperBtn.querySelector("img").src = "img/paper-icon.svg";
 
   userChoice = "камінь";
 });
@@ -29,9 +29,9 @@ scissorsBtn.addEventListener("click", () => {
   stoneBtn.classList.remove("user-choice-btn_selected");
   paperBtn.classList.remove("user-choice-btn_selected");
 
-  stoneBtn.querySelector("img").src = "../img/stone-icon.svg";
-  scissorsBtn.querySelector("img").src = "../img/dark-scissors.svg";
-  paperBtn.querySelector("img").src = "../img/paper-icon.svg";
+  stoneBtn.querySelector("img").src = "img/stone-icon.svg";
+  scissorsBtn.querySelector("img").src = "img/dark-scissors.svg";
+  paperBtn.querySelector("img").src = "img/paper-icon.svg";
 
   userChoice = "ножиці";
 });
@@ -40,9 +40,9 @@ paperBtn.addEventListener("click", () => {
   scissorsBtn.classList.remove("user-choice-btn_selected");
   stoneBtn.classList.remove("user-choice-btn_selected");
 
-  stoneBtn.querySelector("img").src = "../img/stone-icon.svg";
-  scissorsBtn.querySelector("img").src = "../img/scissors-icon.svg";
-  paperBtn.querySelector("img").src = "../img/dark-paper.svg";
+  stoneBtn.querySelector("img").src = "img/stone-icon.svg";
+  scissorsBtn.querySelector("img").src = "img/scissors-icon.svg";
+  paperBtn.querySelector("img").src = "img/dark-paper.svg";
 
   userChoice = "папір";
 });

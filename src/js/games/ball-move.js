@@ -6,6 +6,8 @@ const goal = document.querySelector("#goal");
 let score = 0;
 let isGoalScored = false;
 
+setInterval(checkGoal, 1000);
+
 field.addEventListener("click", (event) => {
   let fieldCoords = field.getBoundingClientRect();
 
@@ -30,9 +32,9 @@ field.addEventListener("click", (event) => {
 
   ball.style.left = ballCoords.left + "px";
   ball.style.top = ballCoords.top + "px";
-
   checkGoal();
 });
+
 
 function checkGoal() {
   const goalRect = goal.getBoundingClientRect();
@@ -47,7 +49,7 @@ function checkGoal() {
     score++;
     scoreDisplay.textContent = score;
 
-    resetBall();
+    setTimeout(resetBall,50);
   }
 }
 

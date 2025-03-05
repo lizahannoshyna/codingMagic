@@ -94,7 +94,7 @@ const renderScientistsCards = () => {
     items.forEach(el => el.innerHTML = '')
     renderScientistsArr.forEach((el, index) => {
         const text = document.createElement('p');
-        text.textContent = `${el.name} ${el.surname}`
+        text.textContent = `${el.name} ${el.surname} ${el.born} - ${el.dead}`
         items[index].appendChild(text)
         
     })

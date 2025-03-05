@@ -1,0 +1,82 @@
+.image-slider {
+  padding: 36px 0;
+  margin: 0;
+}
+.swiper {
+  position: relative;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.image-slider_title {
+  text-align: center;
+  font-size: 16px;
+  line-height: 80%;
+  font-weight: 400;
+  color: $dark;
+  padding-bottom: 36px;
+  margin: 0;
+}
+
+// інформація про студента
+.std-img_wrapper {
+  width: 150px;
+  height: 150px;
+  background-color: $grey;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.std-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.std-name {
+  font-size: 14px;
+  line-height: 121%;
+  font-weight: 400;
+  color: $dark;
+  padding: 20px 0;
+  margin: 0;
+}
+.std-info {
+  font-size: 14px;
+  line-height: 121%;
+  font-weight: 400;
+  color: $dark;
+  margin-bottom: 14px;
+}
+
+// стрілки
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 115px !important;
+  stroke-width: 1px !important;
+  color: $dark;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: auto !important;
+  margin-top: calc(-50px - (var(--swiper-navigation-size) / 2)) !important;
+}
+.custom-swiper-button {
+  font-size: 200px;
+}
+
+// пагінація
+.swiper-pagination {
+  position: absolute;
+}
+.swiper-pagination-bullet-active {
+  background-color: #797979 !important;
+}

@@ -1,3 +1,52 @@
+.footer{
+    width: 1440px;
+    &-img{
+        position: absolute;
+        width:  165px;
+        height: 70px;
+    }
+
+    &-list{
+        list-style: none;
+        margin-left: 350px;
+        &__li{
+            text-decoration: none;
+        }
+        &__link{
+            font-family: Montserrat Alternates;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20.4px;
+            letter-spacing: 0%;
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+    &-form{
+        &__label{
+            width: 204px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: #D7D7D7;
+            border: none;
+            font-family: Montserrat Alternates;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14.63px;
+            letter-spacing: 0%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 80px;
+        }
+        &__buttom{
+           background-color: red;
+        }
+    }
+}
+
+
+
 // .footer {
 
 //   padding: 36px 0;

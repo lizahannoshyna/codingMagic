@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e4f916-184f-417e-989f-2a789da44768" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/js/modals/sign-up.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/games/guess-the-number.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/guess-the-number.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/games/guess-the-number.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/games/guess-the-number.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_guess-the-number.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_guess-the-number.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_leap-year-check.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_leap-year-check.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/modal/sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/modal/sign-up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/sections/modal/_sign-up.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/modal/_sign-up.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,25 +29,25 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.dino-game.html.executor": "Debug",
-    "Node.js.dino-game.js.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "disable.download.node.interpreter.editor.notification": "true",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "Oleg",
-    "last_opened_file_path": "D:/GitH/codingMagic/src/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.dino-game.html.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.dino-game.js.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Oleg&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GitH/codingMagic/src/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitH\codingMagic\src\img" />
@@ -59,7 +61,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-WS-243.24978.60" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
       </set>
     </attachedChunks>
   </component>
@@ -78,6 +80,8 @@
       <workItem from="1740756924701" duration="233000" />
       <workItem from="1740757171200" duration="371000" />
       <workItem from="1740845788363" duration="5804000" />
+      <workItem from="1741108113833" duration="2643000" />
+      <workItem from="1741191456189" duration="2588000" />
     </task>
     <servers />
   </component>

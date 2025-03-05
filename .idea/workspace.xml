@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="80e4f916-184f-417e-989f-2a789da44768" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/games/guess-the-number.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/guess-the-number.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/games/guess-the-number.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/games/guess-the-number.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_guess-the-number.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_guess-the-number.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_leap-year-check.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_leap-year-check.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/games/scientists-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/scientists-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,14 +33,14 @@
     "RunOnceActivity.git.unshallow": "true",
     "disable.download.node.interpreter.editor.notification": "true",
     "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "Oleg",
+    "git-widget-placeholder": "vlad__second",
     "last_opened_file_path": "D:/GitH/codingMagic/src/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
@@ -78,6 +76,7 @@
       <workItem from="1740756924701" duration="233000" />
       <workItem from="1740757171200" duration="371000" />
       <workItem from="1740845788363" duration="5804000" />
+      <workItem from="1741190511979" duration="797000" />
     </task>
     <servers />
   </component>

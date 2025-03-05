@@ -17,6 +17,8 @@ guessBtn.addEventListener('click', () => {
     if(isNaN(userGuess) || userGuess < 1 || userGuess > 10) {
         output.textContent = 'Будь ласка введіть число в діапазоні від 1 до 10'
         output.style.color = 'orange'
+        setTimeout(resetGame, 3000);
+        return;
     }
 
     if(userGuess === random) {
@@ -27,7 +29,6 @@ guessBtn.addEventListener('click', () => {
         output.style.color = 'red'
     }
 
-    setTimeout(resetGame, 3000);
 })
 
 function resetGame() {

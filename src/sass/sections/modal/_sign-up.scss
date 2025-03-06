@@ -14,16 +14,16 @@
   border-radius: 20px;
   position: absolute;
   z-index: 100;
-
   top: 50%;
   left: 50%;
-  min-width: 576px;
-  min-height: 316px;
+  max-width: 576px;
+  max-height: 316px;
   align-items: center;
   text-align: center;
-  padding: 46px 0;
-  background-color: #FFFFFF;
+  padding: 30px;
+  background-color: #ffffff;
   transform: translate(-50%, -50%);
+  position: relative;
 }
 
 .sign-up__form {
@@ -44,6 +44,7 @@
   font-size: 12px;
   line-height: 14.52px;
   text-align: center;
+  margin-top: 16px;
 }
 
 .sign-up__hint {
@@ -59,9 +60,8 @@
   padding: 10px 0 10px 10px;
   gap: 10px;
   border: none;
-
-  background-color: #D7D7D7;
-  color: #7E7E7E;
+  background-color: #d7d7d7;
+  color: #7e7e7e;
   font-family: Montserrat Alternates;
   font-weight: 400;
   font-size: 12px;
@@ -75,7 +75,6 @@
   gap: 10px;
   background-color: #000000;
   box-shadow: 3px 3px 0px 0px #00000040;
-
   color: $white;
   font-family: Montserrat Alternates;
   font-weight: 400;
@@ -87,4 +86,34 @@
 
 .modal-open {
   display: block;
+}
+
+// close btn
+.close-modal-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+// icons
+.sign-up_sword {
+  position: absolute;
+  top: 154px;
+  left: 41px;
+}
+.sign-up_puzzle {
+  position: absolute;
+  bottom: 56px;
+  left: 84px;
+}
+.sign-up_game-development {
+  position: absolute;
+  top: 154px;
+  right: 41px;
+}
+.sign-up_tic-tac-toe {
+  position: absolute;
+  bottom: 56px;
+  right: 84px;
 }

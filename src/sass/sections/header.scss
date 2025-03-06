@@ -1,101 +1,47 @@
 .header {
-  width: 1440px;
+  padding: 36px 0;
   display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
 
-  &-img {
-    margin-top: 21px;
-    margin-bottom: 20px;
-    position: absolute;
+  &__left {
+    width: 544px;
+    display: flex;
+    justify-content: space-between;
   }
 
-  &-list {
+  &-left__nav {
+    width: 370px;
     display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-left: 200px;
-    margin-top: 32px;
-    margin-bottom: 33px;
-    &__href {
+    align-items: center;
+    justify-content: space-between;
+
+    p {
       margin-bottom: 0;
       font-family: Montserrat Alternates;
       font-weight: 400;
       font-size: 12px;
       line-height: 14.63px;
-      color: #000000;
-      text-decoration: none;
-      &{
-        margin-right: 50px;
-      }
+      cursor: pointer;
+
     }
 
+    &-interactive {
+      display: flex;
+      gap: 8px;
+      cursor: pointer;
+    }
   }
 
-  &-div{
-  
-    &__svg{
-      fill: #000000;
-    }
-
-    &__text{
+  &-right {
+    p {
       font-family: Montserrat Alternates;
       font-weight: 400;
       font-size: 12px;
       line-height: 14.63px;
-      letter-spacing: 0%;
-      margin-top: 15px;
-      margin-left: 252px;
+      margin-bottom: 0;
     }
+
   }
 }
-
-.container {
-  width: 1000px;
-  display: flex;
-}
-
-
-
-// .header {
-//   padding: 36px 0;
-//   display: flex;
-//   text-align: center;
-//   align-items: center;
-//   justify-content: space-around;
-
-//   &__left {
-//     width: 544px;
-//     display: flex;
-//     justify-content: space-between;
-//   }
-
-//   &-left__nav {
-//     width: 370px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-
-//     p {
-//       margin-bottom: 0;
-//       font-family: Montserrat Alternates;
-//       font-weight: 400;
-//       font-size: 12px;
-//       line-height: 14.63px;
-//     }
-
-//     &-interactive {
-//       display: flex;
-//       gap: 8px;
-//     }
-//   }
-
-//   &-right {
-//     p {
-//       font-family: Montserrat Alternates;
-//       font-weight: 400;
-//       font-size: 12px;
-//       line-height: 14.63px;
-//     }
-
-//   }
-// }

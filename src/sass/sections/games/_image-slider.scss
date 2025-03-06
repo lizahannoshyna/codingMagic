@@ -60,12 +60,12 @@
 // стрілки
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 115px !important;
+  font-size: 95px !important;
   color: $dark;
 }
 .swiper-button-next,
 .swiper-button-prev {
-  width: auto !important;
+  width: 400px !important;
   margin-top: calc(-50px - (var(--swiper-navigation-size) / 2)) !important;
 }
 .custom-swiper-button {

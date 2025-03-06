@@ -93,10 +93,12 @@ const renderScientistsCards = () => {
     const items = document.querySelectorAll('.scientists-selection__item')
     items.forEach(el => el.innerHTML = '')
     renderScientistsArr.forEach((el, index) => {
-        const text = document.createElement('p');
-        text.textContent = `${el.name} ${el.surname} ${el.born} - ${el.dead}`
-        items[index].appendChild(text)
-        
+        items[index].innerHTML = `
+            <p>
+                <span>${el.name} ${el.surname}</span>
+                <span>${el.born} - ${el.dead}</span>
+            </p>
+        `;
     })
 }
 
@@ -144,7 +146,7 @@ buttons.forEach(button => {
 
 // Отримати масив вчених, що народилися в 19 столітті
 const getScientistsFrom19Century = () => {
-    renderScientistsArr = renderScientistsArr.filter(scientist => scientist.born >= 1801 && scientist.born <= 1900)
+    renderScientistsArr = [...scientists].filter(scientist => scientist.born >= 1801 && scientist.born <= 1900)
 };
 
 // Відсортувати вчених за алфавітом
@@ -160,8 +162,8 @@ const sortScientistsByLifespan = () => {
 
 // Знайти вченого, який народився найпізніше
 const findLatestBornScientist = () => {
-    let latestBorn = renderScientistsArr[0];
-    renderScientistsArr.forEach(el =>{
+    let latestBorn = scientists[0];
+    scientists.forEach(el =>{
         if(el.born > latestBorn.born) latestBorn = el
     })
     renderScientistsArr = [latestBorn]
@@ -169,7 +171,7 @@ const findLatestBornScientist = () => {
 
 // Знайти рік народження Albert Einstein
 const getEinsteinBirthYear = () => {
-    renderScientistsArr = renderScientistsArr.filter((el) =>
+    renderScientistsArr = [...scientists].filter((el) =>
         el.name === 'Albert' && el.surname === 'Einstein'
     )
 
@@ -177,19 +179,19 @@ const getEinsteinBirthYear = () => {
 
 // Знайти вчених, прізвище яких починається на літеру "С"
 const findScientistsByLastNameC = () => {
-    renderScientistsArr = renderScientistsArr.filter(el => el.name.startsWith('S') )
+    renderScientistsArr = [...scientists].filter(el => el.name.startsWith('S') )
 };
 
 // Видалити з масива всіх вчених, ім'я яких починається на "A"
 const removeScientistsWithFirstNameA = () => {
-    renderScientistsArr = renderScientistsArr.filter(el => !el.name.startsWith('A'))
+    renderScientistsArr = [...scientists].filter(el => !el.name.startsWith('A'))
 };
 
 // Знайти вченого, який прожив найбільше, і вченого, який прожив найменше
 const findOldestAndYoungestScientist = () => {
-    let youngest = renderScientistsArr[0]
-    let oldest = renderScientistsArr[0]
-    renderScientistsArr.forEach(el => {
+    let youngest = scientists[0]
+    let oldest = scientists[0]
+    scientists.forEach(el => {
         const lifeSpan = el.dead - el.born
         let oldestLifeSpan = oldest.dead - oldest.born
         let youngestLifeSpan = youngest.dead - youngest.born
@@ -202,7 +204,7 @@ const findOldestAndYoungestScientist = () => {
 
 // Знайти вчених, у яких збігаються перші літери імені та прізвища
 const findScientistsWithMatchingInitials = () => {
-    renderScientistsArr = renderScientistsArr.filter(el => {
+    renderScientistsArr = [...scientists].filter(el => {
         let firstName = el.name[0].toLowerCase()
         let lastName = el.surname[0].toLowerCase()
         return firstName === lastName

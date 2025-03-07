@@ -16,7 +16,7 @@
     <title>Magic Code</title>
     <script type="module" crossorigin src="./commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/vendor-6837a909.js">
-    <link rel="stylesheet" href="./assets/index-2aa52983.css">
+    <link rel="stylesheet" href="./assets/index-7a5f181e.css">
   </head>
   <body class="no-scroll">
     <header class="header">
@@ -70,7 +70,7 @@
     <div class="main__bg">
       <img src="./assets/bg-5d691deb.svg" alt="" class="bg__img" />
       <div class="main__content">
-        <h1 class="main-content__title">Популярні інетрактивні ігри</h1>
+        <h1 class="main-content__title">Популярні інтерактивні ігри</h1>
         <hr class="line" />
         
 <section class="leap-year">
@@ -227,62 +227,95 @@
 </section>
 
         <hr class="line" />
-        <section class="image-slider" id="image-slider">
-    <h3 class="image-slider_title">Наша команда</h3>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="swiper_container">
-            <div class="std-img_wrapper">
-              <img src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg" alt="фото студента" class="std-img" />
-            </div>
-            <h4 class="std-name">Ім’я студента</h4>
-            <p class="std-info">
-              Інформація про роботу, яку він/вона виконав/ла
-            </p>
+        <section class="image-slider">
+  <h3 class="image-slider_title">Наша команда</h3>
+  <h4 class="team-name">( Сливовий квартет )</h4>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper_container">
+          <div class="std-img_wrapper">
+            <img
+              src="./assets/cam-off-liza-da648b32.jpg"
+              alt="фото студента"
+              class="std-img"
+              data-off="img/cam-off-liza.jpg"
+              data-on="img/cam-on-liza.jpg"
+            />
           </div>
+          <img 
+          class="cam cam-toggle" 
+          src="./assets/videocam_off-095ebb98.svg" 
+          alt="camera" 
+          data-off="img/videocam_off.svg" 
+          data-on="img/videocam.svg"
+        />
+          <h4 class="std-name">Єлизавета Ганношина</h4>
+          <p class="std-position">team lead</p>
+          <p class="std-info">Виконала секції: "Камінь-ножиці-папір", "Футбол", "Наша команда". </p>
         </div>
-        <div class="swiper-slide"> <div class="swiper_container">
-          <div class="std-img_wrapper">
-            <img src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg" alt="фото студента" class="std-img" />
-          </div>
-          <h4 class="std-name">Ім’я студента</h4>
-          <p class="std-info">
-            Інформація про роботу, яку він/вона виконав/ла
-          </p>
-        </div></div>
-        <div class="swiper-slide"> <div class="swiper_container">
-          <div class="std-img_wrapper">
-            <img src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg" alt="фото студента" class="std-img" />
-          </div>
-          <h4 class="std-name">Ім’я студента</h4>
-          <p class="std-info">
-            Інформація про роботу, яку він/вона виконав/ла
-          </p>
-        </div></div>
-        <div class="swiper-slide"> <div class="swiper_container">
-          <div class="std-img_wrapper">
-            <img src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg" alt="фото студента" class="std-img" />
-          </div>
-          <h4 class="std-name">Ім’я студента</h4>
-          <p class="std-info">
-            Інформація про роботу, яку він/вона виконав/ла
-          </p>
-        </div></div>
-        <div class="swiper-slide"> <div class="swiper_container">
-          <div class="std-img_wrapper">
-            <img src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg" alt="фото студента" class="std-img" />
-          </div>
-          <h4 class="std-name">Ім’я студента</h4>
-          <p class="std-info">
-            Інформація про роботу, яку він/вона виконав/ла
-          </p>
-        </div></div>
       </div>
-      <div class="swiper-button-next s-button-next custom-swiper-button"></div>
-      <div class="swiper-button-prev s-button-prev custom-swiper-button"></div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-slide">
+        <div class="swiper_container">
+          <div class="std-img_wrapper">
+            <img
+              src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg"
+              alt="фото студента"
+              class="std-img"
+            />
+          </div>
+          <h4 class="std-name">Ім’я студента</h4>
+          <p class="std-position">scrum master</p>
+          <p class="std-info">Інформація про роботу, яку він/вона виконав/ла</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper_container">
+          <div class="std-img_wrapper">
+            <img
+              src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg"
+              alt="фото студента"
+              class="std-img"
+            />
+          </div>
+          <h4 class="std-name">Ім’я студента</h4>
+          <p class="std-position">developer</p>
+          <p class="std-info">Інформація про роботу, яку він/вона виконав/ла</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper_container">
+          <div class="std-img_wrapper">
+            <img
+              src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg"
+              alt="фото студента"
+              class="std-img"
+            />
+          </div>
+          <h4 class="std-name">Ім’я студента</h4>
+          <p class="std-position">developer</p>
+          <p class="std-info">Інформація про роботу, яку він/вона виконав/ла</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper_container">
+          <div class="std-img_wrapper">
+            <img
+              src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg"
+              alt="фото студента"
+              class="std-img"
+            />
+          </div>
+          <h4 class="std-name">Ім’я студента</h4>
+          <p class="std-position">developer</p>
+          <p class="std-info">Інформація про роботу, яку він/вона виконав/ла</p>
+        </div>
+      </div>
     </div>
+    <div class="swiper-button-next s-button-next custom-swiper-button"></div>
+    <div class="swiper-button-prev s-button-prev custom-swiper-button"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 </section>
 
         <hr class="line" />

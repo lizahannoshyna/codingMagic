@@ -13,6 +13,7 @@ new Swiper(".swiper", {
       onlyInViewport: true,
       pageUpDown: true,
     },
+    grabCursor: true,
     mousewheel: {
       sensitivity: 1,
       eventTarget: ".image-slider"
@@ -20,17 +21,5 @@ new Swiper(".swiper", {
     autoHeight: true,
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.cam-toggle').forEach((camIcon) => {
-    camIcon.addEventListener('click', function () {
-      const slide = this.closest('.swiper-slide'); 
-      const stdImg = slide.querySelector('.std-img'); 
-      const isOff = this.getAttribute('src') === this.dataset.off;
 
-      this.setAttribute('src', isOff ? this.dataset.on : this.dataset.off);
-
-      stdImg.setAttribute('src', isOff ? stdImg.dataset.on : stdImg.dataset.off);
-    });
-  });
-});
 

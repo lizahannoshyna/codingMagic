@@ -1,9 +1,13 @@
  .footer {
 
    padding: 36px 0;
-   display: flex;
+   
+
+   &__wrp{
+    display: flex;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-between;
+   }
 
 
    &__contacts {

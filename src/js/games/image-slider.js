@@ -1,7 +1,7 @@
 new Swiper(".swiper", {
     navigation: {
-      nextEl: ".s-button-next",
-      prevEl: ".s-button-prev",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     }, 
     pagination: {
         el: ".swiper-pagination",
@@ -20,3 +20,6 @@ new Swiper(".swiper", {
     },
     autoHeight: true,
 });
+
+
+

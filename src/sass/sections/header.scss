@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // .header {
 //   width: 1440px;
 //   display: flex;
@@ -68,6 +69,17 @@
   text-align: center;
   align-items: center;
   justify-content: space-around;
+=======
+.header {
+  padding: 32px 0;
+
+  &__wrp {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+>>>>>>> 09576baff98d0f3915487af9d1db9568d39bcd62
 
   &__left {
     width: 544px;
@@ -87,11 +99,19 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 14.63px;
+<<<<<<< HEAD
+=======
+      cursor: pointer;
+>>>>>>> 09576baff98d0f3915487af9d1db9568d39bcd62
     }
 
     &-interactive {
       display: flex;
       gap: 8px;
+<<<<<<< HEAD
+=======
+      cursor: pointer;
+>>>>>>> 09576baff98d0f3915487af9d1db9568d39bcd62
     }
   }
 
@@ -101,7 +121,14 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 14.63px;
+<<<<<<< HEAD
     }
 
   }
 }
+=======
+      margin-bottom: 0;
+    }
+  }
+}
+>>>>>>> 09576baff98d0f3915487af9d1db9568d39bcd62

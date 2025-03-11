@@ -20,7 +20,7 @@ document.getElementById("result").addEventListener("click", function() {
             case '-': result = num1 - num2; break;
             case '*': result = num1 * num2; break;
             case '/': 
-                result = num2 / num1
+                result = num1 / num2
                 break;
             default: result = 'Невідома операція';
         }

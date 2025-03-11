@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e4f916-184f-417e-989f-2a789da44768" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/modals/sign-up.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/modals/success.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/modal/sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/modal/sign-up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/modals/sign-up.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/modals/sign-up.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/games/image-slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/games/image-slider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/modal/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/modal/success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/sections/modal/_sign-up.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/modal/_sign-up.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/sections/modal/_success.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/modal/_success.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +32,6 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;JavaScript Debug.dino-game.html.executor&quot;: &quot;Debug&quot;,

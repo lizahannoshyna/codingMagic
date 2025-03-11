@@ -1,3 +1,75 @@
+<<<<<<< HEAD
+// .header {
+//   width: 1440px;
+//   display: flex;
+
+//   &-img {
+//     margin-top: 21px;
+//     margin-bottom: 20px;
+//     position: absolute;
+//   }
+
+//   &-list {
+//     display: flex;
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+//     margin-left: 200px;
+//     margin-top: 32px;
+//     margin-bottom: 33px;
+//     &__href {
+//       margin-bottom: 0;
+//       font-family: Montserrat Alternates;
+//       font-weight: 400;
+//       font-size: 12px;
+//       line-height: 14.63px;
+//       color: #000000;
+//       text-decoration: none;
+//       &{
+//         margin-right: 50px;
+//       }
+//     }
+
+//   }
+
+//   &-div{
+  
+//     &__svg{
+//       fill: #000000;
+//     }
+
+//     &__text{
+//       font-family: Montserrat Alternates;
+//       font-weight: 400;
+//       font-size: 12px;
+//       line-height: 14.63px;
+//       letter-spacing: 0%;
+//       margin-top: 15px;
+//       margin-left: 252px;
+//     }
+//   }
+// }
+
+// .container {
+//   width: 1000px;
+//   display: flex;
+// }
+
+
+
+
+
+
+
+
+
+.header {
+  padding: 36px 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+=======
 .header {
   padding: 32px 0;
 
@@ -7,6 +79,7 @@
     align-items: center;
     justify-content: space-between;
   }
+>>>>>>> 09576baff98d0f3915487af9d1db9568d39bcd62
 
   &__left {
     width: 544px;
@@ -26,13 +99,19 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 14.63px;
+<<<<<<< HEAD
+=======
       cursor: pointer;
+>>>>>>> 09576baff98d0f3915487af9d1db9568d39bcd62
     }
 
     &-interactive {
       display: flex;
       gap: 8px;
+<<<<<<< HEAD
+=======
       cursor: pointer;
+>>>>>>> 09576baff98d0f3915487af9d1db9568d39bcd62
     }
   }
 
@@ -42,7 +121,14 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 14.63px;
+<<<<<<< HEAD
+    }
+
+  }
+}
+=======
       margin-bottom: 0;
     }
   }
 }
+>>>>>>> 09576baff98d0f3915487af9d1db9568d39bcd62

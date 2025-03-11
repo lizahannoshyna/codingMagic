@@ -4,9 +4,15 @@
     <img src="img/header-logo.svg" alt="">
 
     <nav class="header-left__nav">
-      <div class="header-left__nav-interactive">
-        <p>Інтерактив</p>
-        <img src="img/header-arrow.svg" alt="">
+      <div class="dropdown header-dropdown-menu">
+        <button class="header-btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+         Інтерактив
+        </button>
+        <ul class="dropdown-menu header-dropdown-menu">
+          <li><a class="dropdown-item" value="number"  href="#">Числовий</a></li>
+          <li><a class="dropdown-item" value="games" href="#">Ігровий</a></li>
+          <li><a class="dropdown-item"  value="explore" href="#">Ознайомчий</a></li>
+        </ul>
       </div>
 
     <p data-section="image-slider">Наша команда</p>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -14,41 +15,59 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Magic Code</title>
     <script type="module" crossorigin src="./commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/vendor-F2dulsrI.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-COCECuCE.css">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-6837a909.js">
+    <link rel="stylesheet" href="./assets/index-85e500a8.css">
   </head>
-  <body class="no-scroll ">
+  <body>
     <header class="header">
-  <div class="container header__wrp">
-  <div class="header__left">
-    <img src="./assets/header-logo-desr7t9V.svg" alt="">
+  <div class="container">
+    <img src="./assets/header-logo-5e59ce03.svg" alt="" class="header-img">
+
+    <ul class="header-list">
+      <li class="header-list__link"><a href="./" class="header-list__href">Інтерактив<svg>
+        <use></use>
+      </svg></a></li>
+      <li class="header-list__link"><a href="./" class="header-list__href">Наша команда</a></li>
+      <li class="header-list__link"><a href="./" class="header-list__href">Контакти</a></li>
+    </ul>
+
+    <div class="header-div">
+      <svg class="header-div__svg" width="40px" height="20px">
+        <use href="../img/son.svg"></use>
+      </svg>
+      <svg class="header-div__svg" width="40px" height="20px">
+        <use href="../img/moon.svg"></use>
+      </svg>
+
+      <p class="header-div__text">Вітаємо, User!</p>
+
+    </div>
+  </div>
+
+  <!-- <div class="header__left">
+    <img src="img/header-logo.svg" alt="">
 
     <nav class="header-left__nav">
-      <div class="dropdown header-dropdown-menu">
-        <button class="header-btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-         Інтерактив
-        </button>
-        <ul class="dropdown-menu header-dropdown-menu">
-          <li><a class="dropdown-item" value="number"  href="#">Числовий</a></li>
-          <li><a class="dropdown-item" value="games" href="#">Ігровий</a></li>
-          <li><a class="dropdown-item"  value="explore" href="#">Ознайомчий</a></li>
-        </ul>
-      </div>
+      <ul class="header-left__ul">
+        <li class="header-left__li"><a href="./" class="header-left__href">Інтерактив <img src="img/header-arrow.svg"></a></li>
+      </ul>
+      <div class="header-left__nav-interactive">
+   
 
-    <p data-section="image-slider">Наша команда</p>
-    <p data-section="footer">Контакти</p>
-    </nav>
+  </div>
+  <p>Наша команда</p>
+  <p>Контакти</p>
+  </nav>
   </div>
 
   <div class="header-right">
-    <p>Вітаємо, <span id="header-output">User</span>!</p>
-  </div>
-</div>
+    <p>Вітаємо, <span>User</span>!</p>
+  </div> -->
 </header>
-    <div class="sign-up__backdrop modal-open" data-modal-signUp>
+    <div class="sign-up__backdrop" data-modal-signUp>
   <div class="sign-up__modal">
-    <div class="close-modal-btn" data-modal-close-signUp>
-      <img src="data:image/svg+xml,%3csvg%20width='17'%20height='17'%20viewBox='0%200%2017%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%201L8.5%208.5M16%2016L8.5%208.5M8.5%208.5L16%201L1%2016'%20stroke='black'/%3e%3c/svg%3e" />
+    <div class="close-modal-btn">
+      <img src="./assets/close-btn-37faabd5.svg" />
     </div>
     <form class="sign-up__form">
       <h2 class="sign-up__title">
@@ -62,21 +81,22 @@
       </h2>
       <p class="sign-up__hint">Введіть своє ім’я:</p>
       <input class="sign-up__input" placeholder="Ваше ім’я..." />
-      <button class="sign-up__submit" type="button">Зберегти</button>
+      <button class="sign-up__submit">Зберегти</button>
     </form>
     <div class="sign-up_icons">
-      <img class="sign-up_sword" src="./assets/sword-DpZczB9B.svg" alt="sword" />
-      <img class="sign-up_puzzle" src="./assets/puzzle-DqlDsB9b.svg" alt="puzzle" />
-      <img class="sign-up_game-development" src="./assets/game-development-DthMdTdv.svg" alt="game-development" />
-      <img class="sign-up_tic-tac-toe" src="./assets/tic-tac-toe-DPaCmiiT.svg" alt="tic-tac-toe" />
+      <img class="sign-up_sword" src="./assets/sword-a4d38437.svg" alt="sword" />
+      <img class="sign-up_puzzle" src="./assets/puzzle-8274c151.svg" alt="puzzle" />
+      <img class="sign-up_game-development" src="./assets/game-development-e62979bf.svg" alt="game-development" />
+      <img class="sign-up_tic-tac-toe" src="./assets/tic-tac-toe-69c37644.svg" alt="tic-tac-toe" />
     </div>
   </div>
 </div>
 
     
     <div class="main__bg">
-      <div class="main__content main__content-container  container ">
-        <h1 class="main-content__title">Популярні інтерактивні ігри</h1>
+      <img src="./assets/bg-5d691deb.svg" alt="" class="bg__img" />
+      <div class="main__content">
+        <h1 class="main-content__title">Популярні інетрактивні ігри</h1>
         <hr class="line" />
         
 <section class="leap-year">
@@ -127,21 +147,21 @@
       <button class="user-choice_btn" type="button" data-choice="rock">
         <img
           class="user-choice-rock-icon"
-          src="./assets/stone-icon-B7s3ZxMu.svg"
+          src="./assets/stone-icon-687492a4.svg"
           alt="rock-icon"
         />
       </button>
       <button class="user-choice_btn" type="button" data-choice="scissors">
         <img
           class="user-choice-icon"
-          src="./assets/scissors-icon-DuE5BKGI.svg"
+          src="./assets/scissors-icon-296b083f.svg"
           alt="scissors-icon"
         />
       </button>
       <button class="user-choice_btn" type="button" data-choice="paper">
         <img
           class="user-choice-icon"
-          src="./assets/paper-icon-i-C0ZjtK.svg"
+          src="./assets/paper-icon-ddae1753.svg"
           alt="paper-icon"
         />
       </button>
@@ -160,18 +180,7 @@
 </section>
 
         <hr class="line" />
-        <section class="calculator">
-<div class="wrapper">
-    <input type="text" class="calculator__input" id="num1">
-    <button id="add" class="calculator__button">+</button>
-    <button id="subtract" class="calculator__button">-</button>
-    <button id="multiply" class="calculator__button">×</button>
-    <button id="divide" class="calculator__button">÷</button>
-    <input type="text" class="calculator__input" id="num2">
-    <button id="result" type="button" class="calculator__button">=</button>
-    <input type="text" id="input-result" class="calculator__input">
-</div>
-</section>
+        
         <hr class="line" />
         <section class="time-converter">
     <h3 class="time-converter__title">Калькулятор часу</h3>
@@ -210,7 +219,7 @@
     <div class="ball-move_container">
       <h3 class="ball-move_title">Футбол</h3>
       <div class="football-field">
-        <img class="ball" src="./assets/ball-WPsa93Ry.svg" alt="ball" />
+        <img class="ball" src="./assets/ball-40150b79.svg" alt="ball" />
         <div id="goal"></div>
       </div>
       <div id="ball-move_scoreboard">
@@ -234,85 +243,61 @@
 
         <hr class="line" />
         <section class="image-slider">
-  <h3 class="image-slider_title">Наша команда</h3>
-  <h4 class="team-name">( Сливовий квартет )</h4>
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="swiper_container">
-          <div class="std-img_wrapper">
-            <img
-              src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg"
-              alt="фото студента"
-              class="std-img"
-            />
+    <h3 class="image-slider_title">Наша команда</h3>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper_container">
+            <div class="std-img_wrapper">
+              <img src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg" alt="фото студента" class="std-img" />
+            </div>
+            <h4 class="std-name">Ім’я студента</h4>
+            <p class="std-info">
+              Інформація про роботу, яку він/вона виконав/ла
+            </p>
           </div>
-          <h4 class="std-name">Єлизавета Ганношина</h4>
-          <p class="std-position">team lead</p>
-          <p class="std-info">Виконала секції: "Камінь-ножиці-папір", "Футбол", "Наша команда". </p>
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper_container">
+        <div class="swiper-slide"> <div class="swiper_container">
           <div class="std-img_wrapper">
-            <img
-              src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg"
-              alt="фото студента"
-              class="std-img"
-            />
+            <img src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg" alt="фото студента" class="std-img" />
           </div>
-          <h4 class="std-name">Олег Янчук</h4>
-          <p class="std-position">scrum master</p>
-          <p class="std-info">Виконав секції: "Модальне вікно", "Перевір в який рік ти народився", "Калькулятор часу", "Введіть 3 числа".</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper_container">
+          <h4 class="std-name">Ім’я студента</h4>
+          <p class="std-info">
+            Інформація про роботу, яку він/вона виконав/ла
+          </p>
+        </div></div>
+        <div class="swiper-slide"> <div class="swiper_container">
           <div class="std-img_wrapper">
-            <img
-              src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg"
-              alt="фото студента"
-              class="std-img"
-            />
+            <img src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg" alt="фото студента" class="std-img" />
           </div>
-          <h4 class="std-name">Влад Сельвесюк</h4>
-          <p class="std-position">developer</p>
-          <p class="std-info">Виконав секції: "Google динозавр", "Обери вченого/их".</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper_container">
+          <h4 class="std-name">Ім’я студента</h4>
+          <p class="std-info">
+            Інформація про роботу, яку він/вона виконав/ла
+          </p>
+        </div></div>
+        <div class="swiper-slide"> <div class="swiper_container">
           <div class="std-img_wrapper">
-            <img
-              src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg"
-              alt="фото студента"
-              class="std-img"
-            />
+            <img src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg" alt="фото студента" class="std-img" />
           </div>
-          <h4 class="std-name">Назар Ящук</h4>
-          <p class="std-position">developer</p>
-          <p class="std-info">Виконав секції: "Вгадай число, яке загадав комп’ютер", "Калькулятор".</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper_container">
+          <h4 class="std-name">Ім’я студента</h4>
+          <p class="std-info">
+            Інформація про роботу, яку він/вона виконав/ла
+          </p>
+        </div></div>
+        <div class="swiper-slide"> <div class="swiper_container">
           <div class="std-img_wrapper">
-            <img
-              src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg"
-              alt="фото студента"
-              class="std-img"
-            />
+            <img src="https://i.pinimg.com/736x/43/4f/12/434f12781a3eeb3b04dec93882ef503e.jpg" alt="фото студента" class="std-img" />
           </div>
-          <h4 class="std-name">Павло Шошин</h4>
-          <p class="std-position">developer</p>
-          <p class="std-info">Виконав секції: "Хедер" та "Футер"</p>
-        </div>
+          <h4 class="std-name">Ім’я студента</h4>
+          <p class="std-info">
+            Інформація про роботу, яку він/вона виконав/ла
+          </p>
+        </div></div>
       </div>
+      <div class="swiper-button-next s-button-next custom-swiper-button"></div>
+      <div class="swiper-button-prev s-button-prev custom-swiper-button"></div>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-button-next s-button-next custom-swiper-button"></div>
-    <div class="swiper-button-prev s-button-prev custom-swiper-button"></div>
-    <div class="swiper-pagination"></div>
-  </div>
 </section>
 
         <hr class="line" />
@@ -356,10 +341,39 @@
 </section>
       </div>
     </div>
+    
 
-<footer class="footer" id="footer">
-<div class="container footer__wrp">
-    <img src="./assets/footer-logo-CQetf93l.svg" alt="">
+
+
+<footer class="footer">
+    <div class="container">
+        <img src="../img/header-logo.svg" alt="" class="footer-img">
+
+        <ul class="footer-list">
+            <li class="footer-list__li"><a href="./" class="footer-list__link">Тел: +38 (123) 456 78 90</a></li>
+            <li class="footer-list__li"><a href="./" class="footer-list__link">E-Mail: codingmagic@gmail.com</a></li>
+            <li class="footer-list__li"><a href="./" class="footer-list__link">Facebook: CodingMagic</a></li>
+            <li class="footer-list__li"><a href="./" class="footer-list__link">Twitter: CodingMagic</a></li>
+            <li class="footer-list__li"><a href="./" class="footer-list__link">Instagram: CodingMagic</a></li>
+        </ul>
+
+        <div class="footer-div">
+            <form class="footer-form">
+                <input placeholder="Ваша ел. адреса..." type="email" id="email" name="email" class="footer-form__label"
+                    required>
+                <button type="submit" class="footer-form__button">Підписатись</button>
+            </form>
+            <p class="footer-div__text">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+        </div>
+
+    </div>
+    
+</footer>
+
+
+<!-- <footer class="footer">
+
+    <img src="img/footer-logo.svg" alt="">
     <ul class="footer__contacts">
         <li><p>Тел: +38 (123) 456 78 90</p></li>
         <li><p>E-Mail: codingmagic@gmail.com</p></li>
@@ -373,8 +387,8 @@
         <button class="footer-subscribe__send">Підписатись</button>
         <p>*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
     </form>
-</div>
-</footer>
+</footer> -->
 
+    
   </body>
 </html>

@@ -45,3 +45,18 @@
 
   }
 }
+.header-btn {
+  margin-bottom: 0;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+  border:0;
+  background: none;
+}
+.dropdown-item:hover{
+  background-color: #F1F1F1 ;
+}
+.header-dropdown-menu{
+  border-radius: 10px;
+}

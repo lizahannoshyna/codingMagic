@@ -1,0 +1,61 @@
+.success__backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  z-index: 100;
+}
+
+.success__modal {
+  border-radius: 20px;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  max-width: 463px;
+  height: 245px;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+
+.success__title {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+
+  position: absolute;
+  top: 83px;
+  left: 138px;
+}
+
+// icons
+
+.success_sword {
+  position: absolute;
+  top: 69px;
+  left: 43px;
+}
+.success_puzzle {
+  position: absolute;
+  bottom: 70px;
+  left: 84px;
+}
+.success_game-development {
+  position: absolute;
+  top: 69px;
+  right: 42px;
+}
+.success_tic-tac-toe {
+  position: absolute;
+  bottom: 70px;
+  right: 84px;
+}

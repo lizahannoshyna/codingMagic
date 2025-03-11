@@ -11,4 +11,5 @@ import './js/games/max-of-three.js';
 import './js/games/image-slider.js';
 import './js/games/scientists-data.js';
 import './js/modals/sign-up.js'
+import './js/modals/success.js'
 import './js/footer.js';

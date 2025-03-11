@@ -1,145 +1,69 @@
-.footer{
-    width: 1440px;
-    &-img{
-        position: absolute;
-        width:  165px;
-        height: 70px;
-    }
+.footer {
 
-    &-list{
+    padding: 36px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    &__contacts {
         list-style: none;
-        margin-left: 350px;
-        &__li{
-            text-decoration: none;
-        }
-        &__link{
+        margin-bottom: 0;
+        padding-left: 0;
+
+        p {
+            margin-bottom: 0;
             font-family: Montserrat Alternates;
             font-weight: 400;
             font-size: 12px;
             line-height: 20.4px;
-            letter-spacing: 0%;
-            color: #000000;
-            text-decoration: none;
         }
+
     }
-    &-form{
-        display: flex;
-        margin-top: 47px;
-        &__label{
-            margin-right: 36px;
-            margin-bottom: 18px;
+
+    &__subscribe {
+
+        input {
             width: 204px;
             height: 35px;
             border-radius: 20px;
-            background-color: #D7D7D7;
+            padding: 10px 80px 10px 10px;
+            gap: 10px;
             border: none;
+
             font-family: Montserrat Alternates;
             font-weight: 400;
             font-size: 12px;
             line-height: 14.63px;
-            letter-spacing: 0%;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-            padding-right: 80px;
-        }
-        &__buttom{
-           background-color: red;
-        }
-    }
-    &-div{
-        margin-left: 187px;
 
-        &__text{
-           font-family: Montserrat Alternates; 
-           font-weight: 400;
-           font-size: 6px;
-           line-height: 100%;
-           letter-spacing: 0%;
+            color: #7E7E7E;
+            background: #D7D7D7;
+        }
+
+        button {
+            margin-left: 36px;
+            width: 107px;
+            height: 35px;
+            border-radius: 20px;
+            gap: 10px;
+            padding: 10px;
+            border: none;
+
+            font-family: Montserrat Alternates;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14.63px;
+
+            color: #ffffff;
+            background-color: #000000;
+        }
+
+        p {
+            margin-top: 18px;
+            font-family: Montserrat Alternates;
+            font-weight: 400;
+            font-size: 6px;
+            line-height: 7.31px;
         }
     }
 }
-.footer-form__button{
-    background-color: #000000;
-    color: white;
-    border-radius: 20px;
-    padding: 10px;
-    font-family: Montserrat Alternates;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: 0%;
-    border: none;
-    cursor: pointer;
-}
-
-
-// .footer {
-
-//   padding: 36px 0;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-around;
-
-
-//   &__contacts {
-//     list-style: none;
-//     margin-bottom: 0;
-//     padding-left: 0;
-
-//     p {
-//       margin-bottom: 0;
-//       font-family: Montserrat Alternates;
-//       font-weight: 400;
-//       font-size: 12px;
-//       line-height: 20.4px;
-//     }
-
-//   }
-
-//   &__subscribe {
-
-//     input {
-//       width: 204px;
-//       height: 35px;
-//       border-radius: 20px;
-//       padding: 10px 80px 10px 10px;
-//       gap: 10px;
-//       border: none;
-
-//       font-family: Montserrat Alternates;
-//       font-weight: 400;
-//       font-size: 12px;
-//       line-height: 14.63px;
-
-//       color: #7E7E7E;
-//       background: #D7D7D7;
-//     }
-
-//     button {
-//       margin-left: 36px;
-//       width: 107px;
-//       height: 35px;
-//       border-radius: 20px;
-//       gap: 10px;
-//       padding: 10px;
-//       border: none;
-
-//       font-family: Montserrat Alternates;
-//       font-weight: 400;
-//       font-size: 12px;
-//       line-height: 14.63px;
-
-//       color: #ffffff;
-//       background-color: #000000;
-//     }
-
-//     p {
-//       margin-top: 18px;
-//       font-family: Montserrat Alternates;
-//       font-weight: 400;
-//       font-size: 6px;
-//       line-height: 7.31px;
-//     }
-//   }
-// }

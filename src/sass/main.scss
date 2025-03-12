@@ -39,12 +39,12 @@ body {
 }
 
 // base
-@import "./base/reset";
-@import "./base/reset";
+// @import "./base/reset";
+// @import "./base/reset";
 
 // components
-@import "./components/buttons";
-@import "./components/containers";
+// @import "./components/buttons";
+// @import "./components/containers";
 
 // untills
 @import "./untills/colors";
@@ -71,17 +71,18 @@ body {
   background-image: url('../img/bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    &__content-container{
-      display: flex;
-    align-items: center;
-    justify-content: center;
-    }
+    
 
 }
 
 .main__content {
   background-color: #ffffff;
   margin: 0 auto;
+  &__content-container{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
 }
 
 .main-content__title {

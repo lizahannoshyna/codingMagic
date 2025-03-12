@@ -26,11 +26,12 @@
   padding-bottom: 12px;
   margin: 0;
 }
-.team-name{
+.team-name {
   text-align: center;
   font-size: 14px;
   line-height: 80%;
   font-weight: 400;
+  color: #797979;
   padding-bottom: 36px;
   margin: 0;
 }
@@ -42,7 +43,6 @@
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-
 }
 .std-img {
   width: 100%;
@@ -57,10 +57,11 @@
   padding-bottom: 8px;
   margin: 0;
 }
-.std-position{
+.std-position {
   font-size: 14px;
   line-height: 121%;
   font-weight: 400;
+  color: #797979;
   margin: 0;
   padding-bottom: 20px;
 }
@@ -72,30 +73,36 @@
   max-width: 415px;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
   top: var(--swiper-navigation-top-offset, 25%) !important;
-  outline:none !important;
+  outline: none !important;
 }
+
 .swiper-button-prev {
-  background-image: url( /public/img/arrow-prew.svg) !important;
+  background-image: url(/public/img/arrow-prew.svg) !important;
   left: 92px !important;
-  }
-  .swiper-button-next {
+}
+
+.swiper-button-next {
   background-image: url(/public/img/arrow-next.svg) !important;
   right: 92px !important;
-  }
-  .swiper-button-next::after {
+}
+
+.swiper-button-next::after {
   display: none;
-  }
-  .swiper-button-prev::after {
+}
+
+.swiper-button-prev::after {
   display: none;
-  }
-  :root{
-    --swiper-navigation-size: 100px !important;
-  }
+}
+
+:root {
+  --swiper-navigation-size: 100px !important;
+}
 
 .swiper-pagination {
   position: absolute;

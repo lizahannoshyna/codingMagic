@@ -22,7 +22,7 @@ dropdownMenu.addEventListener('change', function() {
     let selectCategory = this.value;
 
     gameSections.forEach((section) => {
-        if (selectCategory === 'games' || section.dataset.category === selectCategory) {
+        if (section.dataset.category === selectCategory) {
             section.style.display = 'block';
         } else {
             section.style.display = 'none'

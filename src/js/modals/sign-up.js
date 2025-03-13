@@ -9,7 +9,7 @@ const sectionLinks = document.querySelectorAll('[data-section]');
 backdrop.addEventListener("click", (event) => {
     if(event.target === backdrop){
         toggleModal();
-    }  
+    }
 })
 
 closeModalBtn.addEventListener("click", (event) => {

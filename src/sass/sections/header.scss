@@ -1,9 +1,11 @@
 .header {
-  padding: 36px 0;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-around;
+  padding: 32px 0;
+  &__wrp {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__left {
     width: 544px;
@@ -24,16 +26,15 @@
       font-size: 12px;
       line-height: 14.63px;
       cursor: pointer;
-
     }
 
     &-interactive {
       display: flex;
       gap: 8px;
+
       cursor: pointer;
     }
   }
-
   &-right {
     p {
       font-family: Montserrat Alternates;
@@ -42,6 +43,21 @@
       line-height: 14.63px;
       margin-bottom: 0;
     }
-
   }
+}
+
+.header-btn {
+  margin-bottom: 0;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+.header-dropdown-menu {
+  border-radius: 10px;
 }

@@ -23,11 +23,19 @@
   line-height: 80%;
   font-weight: 400;
   color: $dark;
+  padding-bottom: 12px;
+  margin: 0;
+}
+.team-name {
+  text-align: center;
+  font-size: 14px;
+  line-height: 80%;
+  font-weight: 400;
+  color: #797979;
   padding-bottom: 36px;
   margin: 0;
 }
 
-// інформація про студента
 .std-img_wrapper {
   width: 150px;
   height: 150px;
@@ -45,34 +53,57 @@
   font-size: 14px;
   line-height: 121%;
   font-weight: 400;
-  color: $dark;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 8px;
   margin: 0;
+}
+.std-position {
+  font-size: 14px;
+  line-height: 121%;
+  font-weight: 400;
+  color: #797979;
+  margin: 0;
+  padding-bottom: 20px;
 }
 .std-info {
   font-size: 14px;
   line-height: 121%;
   font-weight: 400;
-  color: $dark;
   margin-bottom: 14px;
+  max-width: 415px;
 }
 
-// стрілки
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 95px !important;
-  color: $dark;
+.swiper-button-prev,
+.swiper-button-next {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  top: var(--swiper-navigation-top-offset, 25%) !important;
+  outline: none !important;
 }
-.swiper-button-next,
+
 .swiper-button-prev {
-  width: 400px !important;
-  margin-top: calc(-50px - (var(--swiper-navigation-size) / 2)) !important;
-}
-.custom-swiper-button {
-  font-size: 200px;
+  background-image: url(/public/img/arrow-prew.svg) !important;
+  left: 92px !important;
 }
 
-// пагінація
+.swiper-button-next {
+  background-image: url(/public/img/arrow-next.svg) !important;
+  right: 92px !important;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+:root {
+  --swiper-navigation-size: 100px !important;
+}
+
 .swiper-pagination {
   position: absolute;
 }

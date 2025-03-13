@@ -5,7 +5,7 @@ const resultText = document.querySelector(".rps-message");
 
 const computerChoiceBtn = document.querySelector(".computer-choice_btn");
 const computerChoiceText = document.querySelector(
-  ".rps-message-computer-choice"
+    ".rps-message-computer-choice"
 );
 
 const computerScore = document.querySelector("#rps-computer-score");
@@ -59,9 +59,9 @@ function findWinner(userChoice, computerChoice) {
   }
 
   if (
-    (userChoice === "камінь" && computerChoice === "ножиці") ||
-    (userChoice === "ножиці" && computerChoice === "папір") ||
-    (userChoice === "папір" && computerChoice === "камінь")
+      (userChoice === "камінь" && computerChoice === "ножиці") ||
+      (userChoice === "ножиці" && computerChoice === "папір") ||
+      (userChoice === "папір" && computerChoice === "камінь")
   ) {
     return "user";
   } else {

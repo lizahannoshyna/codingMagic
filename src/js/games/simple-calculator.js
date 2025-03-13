@@ -8,7 +8,7 @@ document.getElementById("divide").addEventListener("click", function() { operato
 document.getElementById("result").addEventListener("click", function() {
     let num1 = parseFloat(document.getElementById('num1').value);
     let num2 = parseFloat(document.getElementById('num2').value);
-    let result;
+    let result
 
     if (!operator) {
         result = "Виберіть операцію!";
@@ -19,12 +19,12 @@ document.getElementById("result").addEventListener("click", function() {
             case '+': result = num1 + num2; break;
             case '-': result = num1 - num2; break;
             case '*': result = num1 * num2; break;
-            case '/':
-                result = num2 / num1
+            case '/': 
+                result = num1 / num2
                 break;
             default: result = 'Невідома операція';
         }
     }
 
     document.getElementById('input-result').value = result;
-});
+})

@@ -22,7 +22,7 @@ dropdownMenu.addEventListener('change', function() {
     let selectCategory = this.value;
 
     gameSections.forEach((section) => {
-        if (section.dataset.category === selectCategory) {
+        if (section.dataset.category  === selectCategory) {
             section.style.display = 'block';
         } else {
             section.style.display = 'none'
@@ -34,21 +34,24 @@ dropdownItems.forEach((item) => {
     item.addEventListener('click', () => {
         const category = item.textContent;
 
+
         switch (category) {
             case 'Числовий':
-                document.querySelector('[src="partials/games/leap-year-check.html"]').style.display = 'block';
-                document.querySelector('[src="partials/games/guess-the-number.html"]').style.display = 'block';
-                document.querySelector('[src="partials/games/simple-calculator.html"]').style.display = 'block';
-                document.querySelector('[src="partials/games/time-converter.html"]').style.display = 'block';
-                document.querySelector('[src="partials/games/max-of-three.html"]').style.display = 'block';
+            document.querySelectorAll('.numbers_sections').forEach(section => section.style.display = 'block');
+
+
+            document.querySelectorAll('.games_sections').forEach(section => section.style.display = 'none');
+            document.querySelector('.users_sections').forEach(section => section.style.display = 'none');
                 break;
             case 'Ігровий':
-                document.querySelector('[src="partials/games/rock-paper-scissors.html"]').style.display = 'block';
-                document.querySelector('[src="partials/games/dino-game.html"]').style.display = 'block';
-                document.querySelector('[src="partials/games/ball-move.html"]').style.display = 'block';
+                document.querySelectorAll('.numbers_sections').forEach(section => section.style.display = 'none');
+                document.querySelectorAll('.games_sections').forEach(section => section.style.display = 'block');
+                document.querySelectorAll('.users_sections').forEach(section => section.style.display = 'none');
                 break;
             case 'Ознайомчий':
-                document.querySelector('[src="partials/games/scientists-data.html"]').style.display = 'block';
+                document.querySelectorAll('.numbers_sections').forEach(section => section.style.display = 'none');
+                document.querySelectorAll('.games_sections').forEach(section => section.style.display = 'none');
+                document.querySelectorAll('.users_sections').forEach(section => section.style.display = 'block');
                 break;
             default:
                 gameSections.forEach((section) => {

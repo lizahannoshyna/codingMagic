@@ -61,3 +61,27 @@ dropdownItems.forEach((item) => {
         }
     });
 });
+
+
+const checkbox = document.querySelector("#theme-switch");
+const elements = [
+    document.body, 
+    document.querySelector("header"), 
+    document.querySelector(".main__content"), 
+    document.querySelector("footer")
+];
+const toggleTheme = () => {
+    const isDark = checkbox.checked;
+    
+    elements.forEach(el => {
+        el.classList.toggle("dark", isDark);
+        el.classList.toggle("light", !isDark);
+    });
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+};
+document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    checkbox.checked = savedTheme === "dark";
+    toggleTheme(); // Застосовуємо тему
+});
+checkbox.addEventListener("change", toggleTheme);

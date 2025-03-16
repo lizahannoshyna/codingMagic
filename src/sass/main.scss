@@ -4,15 +4,11 @@
 body {
   font-family: "Montserrat Alternates", sans-serif;
   margin: 0;
-  background-color: var(--bg-light);
+  background-color: var(--body-bg-light);
   color: var(--text-light);
   &.dark{
-    background-color: var(--bg-dark);
+    background-color: var(--body-bg-dark);
     color: var(--text-dark);
-  }
-  &.light{
-    background-color: var(--bg-light);
-    color: var(--text-light);
   }
 }
 
@@ -81,21 +77,16 @@ body {
   background-image: url('../img/bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    
-
 }
 
 .main__content {
-  background-color: var(--bg-light);
+  background-color: var(--header-footer-light);
   color: var(--text-light);
   margin: 0 auto;
   &.dark{
-    background-color: var(--bg-dark);
+    background-color: var(--body-bg-dark);
     color: var(--text-dark);
-  }
-  &.light{
-    background-color: var(--bg-light);
-    color: var(--text-light);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25), -3px 3px 10px rgba(0, 0, 0, 0.25);
   }
   &__content-container{
     display: flex;
@@ -105,8 +96,8 @@ body {
 }
 
 .main-content__title {
+  padding: 36px 0;
   text-align: center;
-  margin: 36px;
   font-family: Montserrat Alternates;
   font-weight: 400;
   font-size: 24px;
@@ -115,10 +106,13 @@ body {
 
 .line {
   margin: 0 auto;
-  width: 536px;
-  border: 1px solid #000000;
+  max-width: 536px;
+  width:100%;
+  border: 1px solid  black;
   opacity: 1;
-  color: #000000;
+  &.dark {
+    border: 1px solid white !important;
+  }
 }
 
 .no-scroll {

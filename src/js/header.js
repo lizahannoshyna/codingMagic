@@ -68,8 +68,16 @@ const elements = [
     document.body, 
     document.querySelector("header"), 
     document.querySelector(".main__content"), 
-    document.querySelector("footer")
+    document.querySelector("footer"),
+    ...document.querySelectorAll("hr"),
+    document.querySelector('.sign-up__modal'),
+    document.querySelector('.success__modal')
 ];
+const headerLogo = document.querySelector('.header-logo'); 
+const footerLogo = document.querySelector('.footer-logo');
+const arrowNext = document.querySelector('.swiper-button-next');
+const arrowPrev = document.querySelector('.swiper-button-prev');
+
 const toggleTheme = () => {
     const isDark = checkbox.checked;
     
@@ -77,11 +85,19 @@ const toggleTheme = () => {
         el.classList.toggle("dark", isDark);
         el.classList.toggle("light", !isDark);
     });
+
+    headerLogo.src= isDark ? 'img/logo-dark.svg' : 'img/header-logo.svg';
+    footerLogo.src= isDark ? 'img/footer-logo-dark.svg' : 'img/footer-logo.svg';
+    arrowNext.style.backgroundImage = 
+    isDark ? "url(/public/img/arrow-next-dark.svg)" : "url(/public/img/arrow-next.svg)";
+    arrowPrev.style.backgroundImage = 
+    isDark ? "url(/public/img/arrow-prew-dark.svg)" : "url(/public/img/arrow-prew.svg)";
+
     localStorage.setItem("theme", isDark ? "dark" : "light");
 };
 document.addEventListener("DOMContentLoaded", () => {
     const savedTheme = localStorage.getItem("theme") || "light";
     checkbox.checked = savedTheme === "dark";
-    toggleTheme(); // Застосовуємо тему
+    toggleTheme();
 });
 checkbox.addEventListener("change", toggleTheme);

@@ -6,7 +6,6 @@
     font-size: 16px;
     line-height: 80%;
     font-weight: 400;
-    color: $dark;
     padding-bottom: 12px;
     margin: 0;
   }
@@ -32,7 +31,6 @@
   font-size: 14px;
   line-height: 80%;
   font-weight: 400;
-  color: #797979;
   padding-bottom: 36px;
   margin: 0;
 }
@@ -68,7 +66,6 @@
     font-size: 14px;
     line-height: 121%;
     font-weight: 400;
-    color: #797979;
     margin: 0;
     padding-bottom: 20px;
   }
@@ -101,12 +98,12 @@
 }
 
 .swiper-button-prev {
-  background-image: url(/public/img/arrow-prew.svg) !important;
+  background-image: url(/public/img/arrow-prew.svg);
   left: 92px !important;
 }
 
 .swiper-button-next {
-  background-image: url(/public/img/arrow-next.svg) !important;
+  background-image: url(/public/img/arrow-next.svg);
   right: 92px !important;
 }
 

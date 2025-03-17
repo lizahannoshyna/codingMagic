@@ -17,7 +17,6 @@ sectionLinks.forEach(link => {
 const gameSections = [...document.querySelectorAll('section')];
 const dropdownItems = document.querySelectorAll('.dropdown-item');
 const dropdownMenu = document.querySelector('.header-dropdown-menu');
-
 dropdownMenu.addEventListener('change', function() {
     let selectCategory = this.value;
 
@@ -53,6 +52,10 @@ dropdownItems.forEach((item) => {
                 document.querySelectorAll('.games_sections').forEach(section => section.style.display = 'none');
                 document.querySelectorAll('.users_sections').forEach(section => section.style.display = 'block');
                 break;
+            case 'Усі секції':
+                document.querySelectorAll('.numbers_sections').forEach(section => section.style.display = 'block');
+                document.querySelectorAll('.games_sections').forEach(section => section.style.display = 'block');
+                document.querySelectorAll('.users_sections').forEach(section => section.style.display = 'block');
             default:
                 gameSections.forEach((section) => {
                     section.style.display = 'block';

@@ -12,6 +12,9 @@ document.getElementById("result").addEventListener("click", function() {
 
     if (!operator) {
         result = "Виберіть операцію!";
+        document.getElementById('input-result').style.fontSize = '10px';
+        document.getElementById('input-result').style.padding = '10px';
+        document.getElementById('input-result').style.color = '#7E7E7E';
     } else if (isNaN(num1) || isNaN(num2)) {
         result = 'Помилка: введіть числа';
     } else {

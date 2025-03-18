@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="80e4f916-184f-417e-989f-2a789da44768" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/games/dino-game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/dino-game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
     &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;vlad__hh&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;vlad__pl&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/GitH/codingMagic/src/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -84,6 +83,7 @@
       <workItem from="1741108113833" duration="2643000" />
       <workItem from="1741191456189" duration="2588000" />
       <workItem from="1741887899332" duration="832000" />
+      <workItem from="1742234826719" duration="3193000" />
     </task>
     <servers />
   </component>

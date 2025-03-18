@@ -73,6 +73,15 @@
 //     cursor: pointer;
 // }
  .footer {
+
+   padding: 36px 0;
+   background-color: var(--header-footer-light);
+  color: var(--text-light);
+  &.dark {
+    background-color: var( --header-footer-dark);
+    color: var(--text-dark);
+  }
+   
    &__wrp{
     display: flex;
    align-items: center;

@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="80e4f916-184f-417e-989f-2a789da44768" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_dino-game.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_dino-game.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sections/games/_scientists-data.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/sections/games/_scientists-data.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/games/dino-game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/games/dino-game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +83,7 @@
       <workItem from="1741108113833" duration="2643000" />
       <workItem from="1741191456189" duration="2588000" />
       <workItem from="1741887899332" duration="832000" />
-      <workItem from="1742234826719" duration="960000" />
+      <workItem from="1742234826719" duration="3193000" />
     </task>
     <servers />
   </component>

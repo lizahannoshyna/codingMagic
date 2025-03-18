@@ -2,6 +2,7 @@ const dino = document.getElementById("dinoGamePlayer");
 const cactus = document.getElementById("dinoGameCactus");
 const score = document.getElementById("dinoGameScore");
 const reset = document.getElementById("dinoGameReset");
+const dinoGameContainer = document.querySelector(".dino-game__container");
 
 let scoreCount = 0;
 let gameStarted = false;
@@ -70,4 +71,8 @@ window.addEventListener("keydown", e => {
 document.addEventListener("DOMContentLoaded", () => {
     hideElements(dino, cactus, score);
     reset.textContent = "Грати";
+})
+dinoGameContainer.addEventListener("click", e => {
+    e.preventDefault();
+    jump()
 })

@@ -1,4 +1,4 @@
-:root{
+:root {
   --background: var(--bg-light);
   --text-colour: var(--text-light);
   --bg-dark: #6f6f6f;
@@ -9,12 +9,6 @@
   --main-content-dark: #5e5e5e;
 }
 
-
-// @media (max-width: 1199px) {
-//   .container {
-//     width: 960px;
-//   }
-// }
 
 /* Medium: 768px - 991px */
 
@@ -27,10 +21,12 @@
   padding: 32px 0;
   background-color: var(--bg-light);
   color: var(--text-light);
-  &.dark{
+
+  &.dark {
     background-color: var(--header-dark);
     color: var(--text-dark);
   }
+
   &__wrp {
     display: flex;
     text-align: center;
@@ -66,6 +62,7 @@
       cursor: pointer;
     }
   }
+
   &-right {
     p {
       font-family: Montserrat Alternates;
@@ -86,9 +83,11 @@
   border: 0;
   background: none;
 }
+
 .dropdown-item:hover {
   background-color: #f1f1f1;
 }
+
 .header-dropdown-menu {
   border-radius: 10px;
 }
@@ -102,6 +101,7 @@
   height: 20px;
   margin-left: 200px;
 }
+
 .switch-slider {
   position: absolute;
   cursor: pointer;
@@ -113,11 +113,13 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+
 #theme-switch {
   opacity: 0;
   width: 0;
   height: 0;
 }
+
 .switch-slider:before {
   position: absolute;
   content: "";
@@ -137,13 +139,16 @@
   border: 1px solid black;
   margin: auto 0;
 }
-#theme-switch:checked + .switch-slider {
+
+#theme-switch:checked+.switch-slider {
   background-color: #7a7a7a;
 }
-#theme-switch:focus + .switch-slider {
+
+#theme-switch:focus+.switch-slider {
   box-shadow: 0 0 1px #7a7a7a;
 }
-#theme-switch:checked + .switch-slider:before {
+
+#theme-switch:checked+.switch-slider:before {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(24px);
@@ -152,9 +157,11 @@
   background-position: center;
   background-color: black;
 }
+
 .switch-slider.round {
   border-radius: 34px;
 }
+
 .switch-slider.round:before {
   border-radius: 50%;
 }
@@ -162,65 +169,114 @@
 
 
 
-@media (max-width: 991px) {
-  .container {
-    width: 720px;
-  }
-  .header{
-    &-img{
-      margin-left: 10px;
-    }
-    padding:  0;
-    &__left{
-      display: flex;
-    }
-    &__wrp{
-      display: flex;
-    }
-    &-left{
-      &__nav{
-        display: block;
-        margin: 0;
-      }
-
-      
-    }
-
-    .switch {
-    margin-left: 50px;
-    }
-  }
-  
-  
-}
+// @media (max-width: 991px) {
+//   .container {
+//     width: 720px;
+//   }
+//   .header{
+//     &-img{
+//       margin-left: 10px;
+//     }
+//     padding:  0;
+//     &__left{
+//       display: flex;
+//     }
+//     &__wrp{
+//       display: flex;
+//     }
+//     &-left{
+//       &__nav{
+//         display: block;
+//         margin: 0;
+//       }
+//     }
+//     .switch {
+//     margin-left: 50px;
+//     }
+//   }
+// }
 
 
 @media (max-width: 767px) {
   .container {
     width: 540px;
+    padding: 10px 5px 10px 5px;
+
   }
 
-  .header{
-    padding:  0;
-    &__left{
+  .header {
+    padding: 0;
+
+    &__left {
+      display: flex;
+
+      width: 544px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    &__wrp {
       display: flex;
     }
-    &__wrp{
-      display: flex;
-    }
-    &-left{
-      &__nav{
-        display: block;
-        margin: 0;
+
+    &-left {
+      &__nav {
+        width: 300px;
+        display: flex;
+        align-items: center;
       }
+    }
+
+
+    .switch {
+      margin-left: 520px;
+      margin-top: 1px;
+      position: absolute;
+
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+    width: 100%;
+  }
+
+
+  .header {
+    padding: 0;
+
+    &__left {
+      display: flex;
+
+      width: 544px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    &__wrp {
+      display: flex;
+    }
+
+    &-left {
+      &__nav {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+      }
+    }
+
+    &-right{
+      margin-left: 60px;
     }
 
     .switch {
       margin-left: 470px;
-      margin-top: 70px;
+      margin-top: 1px;
       position: absolute;
-      
+
     }
   }
-  }
-  
+}

@@ -74,7 +74,9 @@ const elements = [
     document.querySelector("footer"),
     ...document.querySelectorAll("hr"),
     document.querySelector('.sign-up__modal'),
-    document.querySelector('.success__modal')
+    document.querySelector('.success__modal'),
+    document.querySelector('.header-btn'),
+    document.querySelector('.header-dropdown-menu'),
 ];
 const headerLogo = document.querySelector('.header-logo'); 
 const footerLogo = document.querySelector('.footer-logo');

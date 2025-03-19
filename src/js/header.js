@@ -94,9 +94,9 @@ const toggleTheme = () => {
     headerLogo.src= isDark ? 'img/logo-dark.svg' : 'img/header-logo.svg';
     footerLogo.src= isDark ? 'img/footer-logo-dark.svg' : 'img/footer-logo.svg';
     arrowNext.style.backgroundImage = 
-    isDark ? "url(/public/img/arrow-next-dark.svg)" : "url(/public/img/arrow-next.svg)";
+    isDark ? "url(img/arrow-next-dark.svg)" : "url(img/arrow-next.svg)";
     arrowPrev.style.backgroundImage = 
-    isDark ? "url(/public/img/arrow-prew-dark.svg)" : "url(/public/img/arrow-prew.svg)";
+    isDark ? "url(img/arrow-prew-dark.svg)" : "url(img/arrow-prew.svg)";
 
     localStorage.setItem("theme", isDark ? "dark" : "light");
 };

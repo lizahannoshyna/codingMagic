@@ -1,23 +1,31 @@
 .rock-paper-scissors {
   align-items: center;
   text-align: center;
-  padding: 36px 0;
-}
-.rps_title {
-  font-size: 16px;
-  line-height: 80%;
-  font-weight: 400;
-  color: $dark;
-}
-
-.rps-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 0 auto;
-  margin-top: 36px;
+  padding: 36px 0 0 0;
+  &__title {
+    font-size: 16px;
+    line-height: 80%;
+    font-weight: 400;
+  }
+  &__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 36px;
+  }
+  &__scoreboard {
+    position: absolute;
+    right: 160px;
+    gap: 38px;
+    font-size: 12px;
+    line-height: 170%;
+    font-weight: 400;
+    text-align: left;
+    min-width: 150px;
+  }
 }
 
 .user-choices {
@@ -41,16 +49,6 @@
   border: none;
 }
 
-.rps-scoreboard {
-  position: absolute;
-  right: 160px;
-  gap: 38;
-  font-size: 12px;
-  line-height: 170%;
-  font-weight: 400;
-  text-align: left;
-  min-width: 150px;
-}
 .rps-scoreboard-item {
   margin: 0;
 }
@@ -78,12 +76,64 @@
   }
 }
 
-.rps-message-computer-choice_hidden {
-  display: none;
-}
 .rps-message-computer-choice {
-  margin-top: 30px;
+  margin: 30px 0;
   font-size: 12px;
   line-height: 125%;
   font-weight: 400;
+}
+.rps-message-computer-choice_hidden {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .rock-paper-scissors__scoreboard {
+    right: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .user-choices {
+    gap: 34px;
+  }
+  .rock-paper-scissors__scoreboard {
+    right: -15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .user-choices {
+    gap: 24px;
+  }
+  .rock-paper-scissors__scoreboard {
+    right: -50px;
+  }
+  .user-choice_btn {
+    padding: 9px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+  .user-choices {
+    gap: 14px;
+  }
+  .user-choice_btn {
+    padding: 8px;
+  }
+  .rock-paper-scissors__scoreboard {
+    display: none;
+  }
 }

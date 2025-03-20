@@ -21,9 +21,11 @@
   align-items: center;
   text-align: center;
   padding: 30px;
-  background-color: #ffffff;
+  background-color: var(--header-footer-light);
   transform: translate(-50%, -50%);
   position: relative;
+  &.dark {
+    background-color: #6f6f6f;;  }
 }
 
 .success__title {

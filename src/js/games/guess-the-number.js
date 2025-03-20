@@ -24,9 +24,11 @@ guessBtn.addEventListener('click', () => {
     if(userGuess === random) {
         output.textContent = `Вітаю, ви вгадали число! ${random}`
         output.style.color = '#039900'
+        setTimeout(resetGame, 3000);
     } else {
         output.textContent = `Ви програли, комп’ютер загадав ${random}`
-        output.style.color = 'red'
+        output.style.color = '#990000'
+        setTimeout(resetGame, 3000);
     }
 
 })

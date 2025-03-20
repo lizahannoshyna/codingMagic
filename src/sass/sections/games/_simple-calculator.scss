@@ -1,5 +1,4 @@
 .calculator {
-  
   max-width: 629px;
   margin-top: 36px;
   margin-bottom: 36px;
@@ -17,7 +16,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
   &__input {
     width: 135px;
     height: 35px;
@@ -45,12 +43,226 @@
       background-color: dodgerblue;
     }
   }
-  &__wrap {
+}
+  .wrap {
+    width: 65px;
+    height: 61px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
+   
+  }
+
+/* Extra Large: 1200px - 1300px */
+@media (max-width: 1300px) {
+  .calculator {
+    margin: 0;
+    margin-top: 26px;
+    margin-bottom: 36px;
+  border: none;
+  margin-left: 230px;
+  &__input {
+    width: 135px;
+  }
+  &__button {
+    width: 25px;
+    height: 25px;
+    font-family: Montserrat Alternates;
+font-weight: 400;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0%;
+  }
+&__wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  }
+  .wrap {
+    width: 65px;
+    height: 61px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+   
+  }
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+  .calculator {
+    margin: 0;
+    margin-top: 26px;
+    margin-bottom: 36px;
+  border: none;
+  margin-left: 130px;
+  &__input {
+    width: 135px;
+  }
+  &__button {
+    width: 25px;
+    height: 25px;
+    font-family: Montserrat Alternates;
+font-weight: 400;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0%;
+  }
+&__wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  }
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
     width: 65px;
     height: 61px;
   }
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+  .calculator {
+    margin: 0;
+    margin-top: 26px;
+    margin-bottom: 36px;
+    margin-left: 20px;
+  border: none;
+  &__input {
+    width: 135px;
+  }
+  &__button {
+    width: 25px;
+    height: 25px;
+    font-family: Montserrat Alternates;
+font-weight: 400;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0%;
+  }
+&__wrp {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+  }
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 65px;
+    height: 61px;
+  }
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+  .calculator {
+    margin: 0;
+    margin-top: 26px;
+    margin-bottom: 36px;
+  border: none;
+  margin-right: 20px;
+  &__button {
+    width: 25px;
+    height: 25px;
+    font-family: Montserrat Alternates;
+font-weight: 400;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0%;
+&__wrp {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+  &__input:not(:last-child) {
+    width: 75px;
+    font-size: 9px;
+    padding-left: 1px;
+  }
+  #input-result {
+    width: 75px;
+    font-size: 10px;
+    padding-left: 4px;
+  }
+}
+  
+
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 65px;
+    height: 61px;
+  }
+  }
+.container {
+    max-width: 540px;
+  }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+  .calculator {
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  border: none;
+  margin-right: 20px;
+  &__input:not(:last-child) {
+    width: 75px;
+    font-size: 9px;
+    padding-left: 1px;
+  }
+  #input-result {
+    width: 75px;
+    font-size: 10px;
+    padding-left: 4px;
+  }
+  &__button {
+    width: 25px;
+    height: 25px;
+    font-family: Montserrat Alternates;
+font-weight: 400;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0%;
+&__wrp {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+  }
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 65px;
+    height: 61px;
+  }
+}
 }

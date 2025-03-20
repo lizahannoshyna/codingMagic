@@ -47,3 +47,14 @@
     margin-top: 36px;
   }
 }
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+  .max-of-three__inputs{
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+}

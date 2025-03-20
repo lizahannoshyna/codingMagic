@@ -3,16 +3,12 @@
   --text-colour: var(--text-light);
 
   --header-footer-light: white;
-  --body-bg-light:#EEEEEE;
+  --body-bg-light: #eeeeee;
   --text-light: black;
 
-
-  
-  --header-footer-dark:#5c5c5c;
+  --header-footer-dark: #5c5c5c;
   --body-bg-dark: #6f6f6f;
   --text-dark: white;
-
-  
 }
 
 .header {
@@ -20,9 +16,8 @@
   background-color: var(--header-footer-light);
   color: var(--text-light);
 
-
   &.dark {
-    background-color: var( --header-footer-dark);
+    background-color: var(--header-footer-dark);
 
     color: var(--text-dark);
   }
@@ -64,6 +59,12 @@
   }
 
   &-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 185px;
+    justify-content: space-between;
     p {
       font-family: Montserrat Alternates;
       font-weight: 400;
@@ -83,7 +84,7 @@
   border: 0;
   background: none;
   color: var(--text-light);
-  &.dark{
+  &.dark {
     color: var(--text-dark);
   }
 }
@@ -102,14 +103,13 @@
   }
 }
 
-
 .dark {
   .header-dropdown-menu {
     background-color: var(--header-footer-dark) !important;
     color: var(--text-dark);
 
     .dropdown-item {
-      color: var(--text-dark);
+      color: var(--text-dark) !important;
 
       &:hover {
         background-color: #565656;
@@ -118,14 +118,11 @@
   }
 }
 
-
-
 .switch {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 20px;
-  margin-left: 200px;
 }
 
 .switch-slider {
@@ -164,17 +161,24 @@
   background-position: center;
   border: 1px solid black;
   margin: auto 0;
+  @media (max-width: 768px) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    bottom: 0;
+  }
 }
 
-#theme-switch:checked+.switch-slider {
+#theme-switch:checked + .switch-slider {
   background-color: #7a7a7a;
 }
 
-#theme-switch:focus+.switch-slider {
+#theme-switch:focus + .switch-slider {
   box-shadow: 0 0 1px #7a7a7a;
 }
 
-#theme-switch:checked+.switch-slider:before {
+#theme-switch:checked + .switch-slider:before {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(24px);
@@ -192,10 +196,6 @@
   border-radius: 50%;
 }
 
-
-
-
-
 @media (max-width: 991px) {
   .container {
     width: 720px;
@@ -204,59 +204,11 @@
   }
 
   .header {
-    &-img {
-      margin-left: 10px;
-    }
-
-    padding: 0;
 
     &__left {
-      display: flex;
-    }
-
-    &__wrp {
-      display: flex;
-    }
-
-    &-left {
-      &__nav {
-        display: flex;
-        margin-left: 20px;
-      }
-    }
-
-
-    .switch {
-      display: none;
-    }
-
-    &-right {
-      margin-left: 40px;
-    }
-  }
-}
-
-
-@media (max-width: 767px) {
-  .container {
-    width: 540px;
-    padding: 10px 5px 10px 5px;
-
-  }
-
-  .header {
-    padding: 0;
-
-    &__left {
-      display: flex;
-
       width: 544px;
       display: flex;
-      justify-content: space-between;
-    }
-
-    &__wrp {
-      display: flex;
+      justify-content: start;
     }
 
     &-left {
@@ -264,18 +216,28 @@
         width: 300px;
         display: flex;
         align-items: center;
-
+        justify-content: space-between;
+        margin-left: 50px;
       }
     }
+  }
+}
 
-  
+@media (max-width: 767px) {
+  .container {
+    width: 540px;
+    padding: 10px 5px 10px 5px;
+  }
 
-
-    .switch {
+  .header {
+    &-text {
       display: none;
     }
-
-    ;
+    &__left {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -283,49 +245,19 @@
   .container {
     padding: 0 15px;
     width: 400px;
-
   }
 
-
   .header {
-    padding-top: 20px;
-
-    &-text {
-      display: none;
-    }
-
-    &__left {
-      display: flex;
-
-      width: 544px;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    &__wrp {
-      display: flex;
-    }
-
     &-left {
       &__nav {
-        width: 300px;
+        width: 200px;
         display: flex;
         align-items: center;
         margin-left: 50px;
       }
     }
-
     &-right {
       margin-left: 60px;
-      display: none;
-    }
-
-    .switch {
-      margin-left: 300px;
-      margin-top: 1px;
-      position: absolute;
-      display: block;
     }
   }
 }
-

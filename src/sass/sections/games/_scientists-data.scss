@@ -141,6 +141,11 @@
   .container {
     max-width: 540px;
   }
+
+  .scientists-selection__grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
 }
 
 /* Extra small: 0px (320px) - 575px */
@@ -148,6 +153,10 @@
   .container {
     padding: 0 15px;
     max-width: 100%;
+  }
+  .scientists-selection__grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 }
 
